@@ -4,294 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokéDrag Race Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --header-mobile: 70px;
-            --header-desktop: 90px;
-            --eyebrow-mobile: 70px;
-            --eyebrow-desktop: 55px;
-            --bg-color: rgb(244, 239, 234);
-            --text-color: rgb(56, 56, 56);
-            --accent-color: rgb(255, 105, 180);
-            --win-color: rgb(255, 215, 0);
-            --high-color: rgb(144, 238, 144);
-            --safe-color: rgb(200, 200, 200);
-            --low-color: rgb(255, 200, 100);
-            --btm-color: rgb(255, 100, 100);
-            --elim-color: rgb(50, 50, 50);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            scroll-margin-top: var(--eyebrow-desktop);
-        }
-
-        ::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: rgb(136, 136, 136);
-        }
-
-        ::-webkit-scrollbar-track {
-            background: rgb(241, 241, 241);
-        }
-
-        html, body {
+        body {
             font-family: 'Space Mono', monospace;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            min-height: 100vh;
-            line-height: 1.6;
-        }
-
-        .container {
-            position: relative;
-            margin: 0 auto;
-            padding: 0 24px;
-            width: 100%;
-        }
-
-        .section {
-            padding-top: 40px;
-            padding-bottom: 160px;
-            overflow: visible;
-        }
-
-        @media (min-width: 728px) {
-            .container {
-                max-width: 728px;
-                padding: 0 20px;
-            }
-
-            .section {
-                padding-top: 64px;
-                padding-bottom: 140px;
-            }
-
-            * {
-                scroll-margin-top: var(--eyebrow-desktop);
-            }
-        }
-
-        @media (min-width: 960px) {
-            .container {
-                max-width: 960px;
-                padding: 0 60px;
-            }
-
-            .section {
-                padding-top: 80px;
-                padding-bottom: 180px;
-            }
-        }
-
-        header {
-            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 2rem 0 1rem 0;
-            color: var(--accent-color);
-        }
-
-        h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin: 1.5rem 0 0.5rem 0;
-        }
-
-        .subtitle {
-            font-size: 1rem;
-            opacity: 0.95;
-        }
-
-        .button {
-            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 1rem;
-            font-family: 'Space Mono', monospace;
-            font-weight: 700;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin: 0.5rem;
-        }
-
-        .button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-
-        .button:active {
-            transform: translateY(0);
-        }
-
-        .button-secondary {
-            background: linear-gradient(135deg, #9370DB 0%, #8A2BE2 100%);
-        }
-
-        .button-small {
-            padding: 8px 16px;
-            font-size: 0.85rem;
-        }
-
-        .cast-selection {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .pokemon-card {
-            background: white;
-            border-radius: 12px;
-            padding: 1rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: 3px solid transparent;
-        }
-
-        .pokemon-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        .pokemon-card.selected {
-            border-color: var(--accent-color);
-            background: linear-gradient(135deg, rgba(255, 105, 180, 0.1) 0%, rgba(255, 20, 147, 0.1) 100%);
-        }
-
-        .pokemon-card.eliminated {
-            opacity: 0.5;
-            filter: grayscale(100%);
-        }
-
-        .pokemon-image {
-            width: 100%;
-            height: 150px;
-            object-fit: contain;
-            margin-bottom: 0.5rem;
-        }
-
-        .pokemon-name {
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-            text-align: center;
-        }
-
-        .stats {
-            font-size: 0.75rem;
-            margin-top: 0.5rem;
-        }
-
-        .stat-row {
-            display: flex;
-            justify-content: space-between;
-            margin: 0.2rem 0;
-        }
-
-        .track-record-table {
-            width: 100%;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin: 2rem 0;
-        }
-
-        .track-record-table table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .track-record-table th {
-            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
-            color: white;
-            padding: 1rem;
-            text-align: left;
-            font-size: 0.85rem;
-        }
-
-        .track-record-table td {
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid #eee;
-            font-size: 0.85rem;
-        }
-
-        .track-record-table tr:hover {
-            background: rgba(255, 105, 180, 0.05);
-        }
-
-        .placement-badge {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 6px;
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-align: center;
-            min-width: 50px;
-        }
-
-        .WIN { background: var(--win-color); color: black; }
-        .HIGH { background: var(--high-color); color: black; }
-        .SAFE { background: var(--safe-color); color: black; }
-        .LOW { background: var(--low-color); color: black; }
-        .BTM2 { background: var(--btm-color); color: white; }
-        .ELIM { background: var(--elim-color); color: white; }
-        .RUNNER { background: linear-gradient(135deg, silver 0%, darkgray 100%); color: black; }
-        .WINNER { background: linear-gradient(135deg, gold 0%, #FFD700 100%); color: black; }
-
-        .phase-container {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .entrance-sequence {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .entrance-item {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 1rem;
-            background: linear-gradient(135deg, rgba(255, 105, 180, 0.05) 0%, rgba(255, 20, 147, 0.05) 100%);
-            border-radius: 8px;
-            animation: slideIn 0.5s ease;
         }
 
         @keyframes slideIn {
@@ -305,327 +24,93 @@
             }
         }
 
-        .entrance-image {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(-5%);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
         }
 
-        .entrance-quote {
-            flex: 1;
-            font-style: italic;
-            font-size: 0.95rem;
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .8;
+            }
         }
 
-        .promo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
         }
 
-        .promo-card {
-            text-align: center;
-            padding: 1rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .animate-slideIn {
+            animation: slideIn 0.5s ease;
         }
 
-        .promo-card img {
-            width: 100%;
-            height: 120px;
-            object-fit: contain;
+        .animate-bounce-slow {
+            animation: bounce 2s infinite;
         }
 
-        .challenge-selector {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
+        .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
 
-        .challenge-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+        .gradient-shimmer {
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+            background-size: 1000px 100%;
+            animation: shimmer 3s infinite;
         }
 
-        .challenge-card:hover {
-            border-color: var(--accent-color);
-            transform: translateY(-2px);
-        }
-
-        .performance-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .performance-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .performance-queen {
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-            color: var(--accent-color);
-        }
-
-        .results-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .result-category {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .result-title {
-            font-weight: 700;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        .result-queens {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .queen-badge {
-            padding: 8px 16px;
-            border-radius: 20px;
-            background: var(--accent-color);
-            color: white;
-            font-size: 0.9rem;
-        }
-
-        .lipsync-battle {
-            background: linear-gradient(135deg, rgba(255, 105, 180, 0.1) 0%, rgba(255, 20, 147, 0.1) 100%);
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .lipsync-queens {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 2rem 0;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        .lipsync-queen {
-            text-align: center;
-        }
-
-        .lipsync-queen img {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-        }
-
-        .vs {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--accent-color);
-        }
-
-        .producer-room {
-            background: linear-gradient(135deg, rgba(147, 112, 219, 0.1) 0%, rgba(138, 43, 226, 0.1) 100%);
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-        }
-
-        .episode-override {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-
-        .placement-selector {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .placement-select {
-            padding: 0.5rem;
-            border-radius: 6px;
-            border: 2px solid #ddd;
-            font-family: 'Space Mono', monospace;
-            font-size: 0.9rem;
-        }
-
-        .drama-box {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 200, 0, 0.1) 100%);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-            border-left: 4px solid gold;
-        }
-
-        .tea-spill {
-            font-style: italic;
-            margin: 0.5rem 0;
-        }
-
-        .storyline-tag {
-            display: inline-block;
-            padding: 4px 12px;
-            background: var(--accent-color);
-            color: white;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            margin: 0.25rem;
-        }
-
-        .nav-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin: 2rem 0;
-            flex-wrap: wrap;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .season-stats {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .stat-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, rgba(255, 105, 180, 0.05) 0%, rgba(255, 20, 147, 0.05) 100%);
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .stat-value {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--accent-color);
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        .relationship-web {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-
-        .relationship-item {
-            padding: 0.75rem;
-            margin: 0.5rem 0;
-            background: rgba(255, 105, 180, 0.05);
-            border-radius: 6px;
-            font-size: 0.9rem;
-        }
-
-        .finale-stage {
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            padding: 3rem;
-            border-radius: 12px;
-            text-align: center;
-            color: white;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        .top4-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .finalist-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            color: var(--text-color);
-        }
-
-        .crown-icon {
-            font-size: 3rem;
-            margin: 1rem 0;
-        }
-
-        input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-        }
-
-        .selection-count {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            font-weight: 700;
-            z-index: 999;
-        }
-
-        .error-message {
-            background: #ff4444;
-            color: white;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
+        .sprite-pixel {
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'drag-pink': '#FF69B4',
+                        'drag-pink-dark': '#FF1493',
+                        'drag-purple': '#9370DB',
+                        'drag-purple-dark': '#8A2BE2',
+                        'cream': '#F4EFEA',
+                        'win': '#FFD700',
+                        'high': '#90EE90',
+                        'safe': '#C8C8C8',
+                        'low': '#FFC864',
+                        'btm': '#FF6464',
+                        'elim': '#323232',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>🌟 PokéDrag Race Simulator 🌟</h1>
-        <p class="subtitle">Gotta Slay 'Em All!</p>
+<body class="bg-cream min-h-screen">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white p-6 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">🌟 PokéDrag Race Simulator 🌟</h1>
+            <p class="text-lg mt-2 opacity-95">Gotta Slay 'Em All!</p>
+        </div>
     </header>
 
-    <div class="container">
-        <div class="section">
-            <div id="app"></div>
-        </div>
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 md:px-8 lg:px-16 py-8 md:py-16">
+        <div id="app"></div>
     </div>
 
     <script src="app.js"></script>

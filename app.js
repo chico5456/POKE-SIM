@@ -1,12 +1,13 @@
 // ========================================
-// POKEMON DATA
+// POKEMON DATA WITH POKEDEX NUMBERS
 // ========================================
 
 const POKEMON_DATABASE = [
     {
         id: 1,
         name: "Gardevoir",
-        image: "https://img.pokemondb.net/artwork/large/gardevoir.jpg",
+        pokedex: 282,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -27,7 +28,8 @@ const POKEMON_DATABASE = [
     {
         id: 2,
         name: "Lopunny",
-        image: "https://img.pokemondb.net/artwork/large/lopunny.jpg",
+        pokedex: 428,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png",
         stats: {
             acting: 7,
             improv: 9,
@@ -48,7 +50,8 @@ const POKEMON_DATABASE = [
     {
         id: 3,
         name: "Milotic",
-        image: "https://img.pokemondb.net/artwork/large/milotic.jpg",
+        pokedex: 350,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -69,7 +72,8 @@ const POKEMON_DATABASE = [
     {
         id: 4,
         name: "Tsareena",
-        image: "https://img.pokemondb.net/artwork/large/tsareena.jpg",
+        pokedex: 763,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -90,7 +94,8 @@ const POKEMON_DATABASE = [
     {
         id: 5,
         name: "Primarina",
-        image: "https://img.pokemondb.net/artwork/large/primarina.jpg",
+        pokedex: 730,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
         stats: {
             acting: 9,
             improv: 7,
@@ -111,7 +116,8 @@ const POKEMON_DATABASE = [
     {
         id: 6,
         name: "Vespiquen",
-        image: "https://img.pokemondb.net/artwork/large/vespiquen.jpg",
+        pokedex: 416,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
         stats: {
             acting: 8,
             improv: 9,
@@ -132,7 +138,8 @@ const POKEMON_DATABASE = [
     {
         id: 7,
         name: "Florges",
-        image: "https://img.pokemondb.net/artwork/large/florges.jpg",
+        pokedex: 671,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png",
         stats: {
             acting: 7,
             improv: 7,
@@ -153,7 +160,8 @@ const POKEMON_DATABASE = [
     {
         id: 8,
         name: "Delphox",
-        image: "https://img.pokemondb.net/artwork/large/delphox.jpg",
+        pokedex: 655,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -174,7 +182,8 @@ const POKEMON_DATABASE = [
     {
         id: 9,
         name: "Salazzle",
-        image: "https://img.pokemondb.net/artwork/large/salazzle.jpg",
+        pokedex: 758,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png",
         stats: {
             acting: 8,
             improv: 10,
@@ -195,7 +204,8 @@ const POKEMON_DATABASE = [
     {
         id: 10,
         name: "Kangaskhan",
-        image: "https://img.pokemondb.net/artwork/large/kangaskhan.jpg",
+        pokedex: 115,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -216,7 +226,8 @@ const POKEMON_DATABASE = [
     {
         id: 11,
         name: "Nidoqueen",
-        image: "https://img.pokemondb.net/artwork/large/nidoqueen.jpg",
+        pokedex: 31,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -237,7 +248,8 @@ const POKEMON_DATABASE = [
     {
         id: 12,
         name: "Lilligant",
-        image: "https://img.pokemondb.net/artwork/large/lilligant.jpg",
+        pokedex: 549,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
         stats: {
             acting: 7,
             improv: 6,
@@ -258,7 +270,8 @@ const POKEMON_DATABASE = [
     {
         id: 13,
         name: "Gothitelle",
-        image: "https://img.pokemondb.net/artwork/large/gothitelle.jpg",
+        pokedex: 576,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
         stats: {
             acting: 9,
             improv: 7,
@@ -279,7 +292,8 @@ const POKEMON_DATABASE = [
     {
         id: 14,
         name: "Froslass",
-        image: "https://img.pokemondb.net/artwork/large/froslass.jpg",
+        pokedex: 478,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -300,7 +314,8 @@ const POKEMON_DATABASE = [
     {
         id: 15,
         name: "Cinccino",
-        image: "https://img.pokemondb.net/artwork/large/cinccino.jpg",
+        pokedex: 573,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
         stats: {
             acting: 7,
             improv: 9,
@@ -321,7 +336,8 @@ const POKEMON_DATABASE = [
     {
         id: 16,
         name: "Mismagius",
-        image: "https://img.pokemondb.net/artwork/large/mismagius.jpg",
+        pokedex: 429,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -342,7 +358,8 @@ const POKEMON_DATABASE = [
     {
         id: 17,
         name: "Cresselia",
-        image: "https://img.pokemondb.net/artwork/large/cresselia.jpg",
+        pokedex: 488,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -363,7 +380,8 @@ const POKEMON_DATABASE = [
     {
         id: 18,
         name: "Bellossom",
-        image: "https://img.pokemondb.net/artwork/large/bellossom.jpg",
+        pokedex: 182,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -384,7 +402,8 @@ const POKEMON_DATABASE = [
     {
         id: 19,
         name: "Ninetales (Alola)",
-        image: "https://img.pokemondb.net/artwork/large/ninetales-alolan.jpg",
+        pokedex: 38,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10123.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -405,7 +424,8 @@ const POKEMON_DATABASE = [
     {
         id: 20,
         name: "Meloetta",
-        image: "https://img.pokemondb.net/artwork/large/meloetta-aria.jpg",
+        pokedex: 648,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -430,15 +450,15 @@ const POKEMON_DATABASE = [
 // ========================================
 
 const CHALLENGES = [
-    { name: "Acting Challenge", type: "acting", description: "Show us your dramatic chops!" },
-    { name: "Snatch Game", type: "improv", description: "Impersonate a celebrity!" },
-    { name: "Stand-Up Comedy", type: "comedy", description: "Make Ru laugh!" },
-    { name: "Choreography Challenge", type: "dance", description: "Dance for your life!" },
-    { name: "Design Challenge", type: "design", description: "Create a look from scratch!" },
-    { name: "Runway Extravaganza", type: "runway", description: "Serve looks!" },
-    { name: "Makeover Challenge", type: "makeover", description: "Transform someone else!" },
-    { name: "Rusical", type: "rusical", description: "Sing and dance in a musical!" },
-    { name: "Girl Groups", type: "rumix", description: "Perform in a girl group!" }
+    { name: "Acting Challenge", type: "acting", emoji: "🎭", description: "Show us your dramatic chops!" },
+    { name: "Snatch Game", type: "improv", emoji: "🎤", description: "Impersonate a celebrity!" },
+    { name: "Stand-Up Comedy", type: "comedy", emoji: "😂", description: "Make Ru laugh!" },
+    { name: "Choreography Challenge", type: "dance", emoji: "💃", description: "Dance for your life!" },
+    { name: "Design Challenge", type: "design", emoji: "✂️", description: "Create a look from scratch!" },
+    { name: "Runway Extravaganza", type: "runway", emoji: "👗", description: "Serve looks!" },
+    { name: "Makeover Challenge", type: "makeover", emoji: "💄", description: "Transform someone else!" },
+    { name: "Rusical", type: "rusical", emoji: "🎵", description: "Sing and dance in a musical!" },
+    { name: "Girl Groups", type: "rumix", emoji: "🎶", description: "Perform in a girl group!" }
 ];
 
 // ========================================
@@ -487,7 +507,8 @@ const AppState = {
     eliminated: [],
     relationships: {},
     seasonDrama: [],
-    producerOverrides: {}
+    producerOverrides: {},
+    pendingChallenge: null // Store challenge info before creating episode
 };
 
 // ========================================
@@ -528,17 +549,6 @@ function calculatePerformance(queen, challengeType) {
     const baseStat = queen.stats[challengeType] || 5;
     const variance = Math.random() * 4 - 2; // -2 to +2
     return Math.max(1, Math.min(10, baseStat + variance));
-}
-
-function determineWinner(queen1, queen2, challengeType = 'lipsync') {
-    const score1 = calculatePerformance(queen1, challengeType);
-    const score2 = calculatePerformance(queen2, challengeType);
-
-    // Add some randomness for drama
-    const luck1 = Math.random() * 2;
-    const luck2 = Math.random() * 2;
-
-    return (score1 + luck1) > (score2 + luck2) ? queen1 : queen2;
 }
 
 function generatePerformanceDescription(queen, challengeType, score) {
@@ -614,21 +624,25 @@ function assignPlacements(queensInCompetition, challengeType, overrides = {}) {
     // HIGH
     const highQueens = overrides.HIGH || [];
     if (highQueens.length > 0) {
-        highQueens.forEach(id => placements[id] = 'HIGH');
-        assigned += highQueens.length;
+        highQueens.forEach(id => {
+            if (id) placements[id] = 'HIGH';
+        });
     } else {
-        for (let i = 0; i < numHigh && assigned < numQueens - numBtm; i++) {
-            if (!placements[performances[assigned].queen.id]) {
-                placements[performances[assigned].queen.id] = 'HIGH';
+        let highCount = 0;
+        for (let i = 1; i < performances.length && highCount < numHigh; i++) {
+            if (!placements[performances[i].queen.id]) {
+                placements[performances[i].queen.id] = 'HIGH';
+                highCount++;
             }
-            assigned++;
         }
     }
 
     // BTM2
     const btmQueens = overrides.BTM2 || [];
     if (btmQueens.length > 0) {
-        btmQueens.forEach(id => placements[id] = 'BTM2');
+        btmQueens.forEach(id => {
+            if (id) placements[id] = 'BTM2';
+        });
     } else {
         placements[performances[numQueens - 2].queen.id] = 'BTM2';
         placements[performances[numQueens - 1].queen.id] = 'BTM2';
@@ -678,6 +692,9 @@ function render() {
         case 'CHALLENGE_SELECT':
             app.innerHTML = renderChallengeSelect();
             break;
+        case 'PRODUCER_ROOM':
+            app.innerHTML = renderProducerRoom();
+            break;
         case 'CHALLENGE_ANNOUNCE':
             app.innerHTML = renderChallengeAnnounce();
             break;
@@ -708,110 +725,195 @@ function renderCastSelection() {
     const selectedCount = AppState.selectedQueens.length;
 
     return `
-        <h2>Select Your Cast (Choose 10-14 Queens)</h2>
-        <p style="margin: 1rem 0;">Selected: ${selectedCount}/14</p>
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-drag-pink mb-4">Select Your Cast</h2>
+            <p class="text-center text-xl mb-4">Choose 10-14 Queens</p>
+            <p class="text-center text-2xl font-bold mb-8">Selected: ${selectedCount}/14</p>
 
-        ${selectedCount < 10 ? '<p class="error-message">⚠️ Please select at least 10 queens to continue</p>' : ''}
+            ${selectedCount < 10 ? '<div class="bg-red-500 text-white p-4 rounded-lg mb-8 text-center font-bold">⚠️ Please select at least 10 queens to continue</div>' : ''}
 
-        <div class="cast-selection">
-            ${POKEMON_DATABASE.map(pokemon => `
-                <div class="pokemon-card ${AppState.selectedQueens.includes(pokemon.id) ? 'selected' : ''}"
-                     onclick="toggleQueenSelection(${pokemon.id})">
-                    <img src="${pokemon.image}" alt="${pokemon.name}" class="pokemon-image">
-                    <div class="pokemon-name">${pokemon.name}</div>
-                    <div class="stats">
-                        <div class="stat-row"><span>Acting:</span> <span>${pokemon.stats.acting}</span></div>
-                        <div class="stat-row"><span>Comedy:</span> <span>${pokemon.stats.comedy}</span></div>
-                        <div class="stat-row"><span>Dance:</span> <span>${pokemon.stats.dance}</span></div>
-                        <div class="stat-row"><span>Design:</span> <span>${pokemon.stats.design}</span></div>
-                        <div class="stat-row"><span>Runway:</span> <span>${pokemon.stats.runway}</span></div>
-                        <div class="stat-row"><span>Lipsync:</span> <span>${pokemon.stats.lipsync}</span></div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mb-8">
+                ${POKEMON_DATABASE.map(pokemon => `
+                    <div class="bg-white rounded-xl p-4 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl border-4 ${AppState.selectedQueens.includes(pokemon.id) ? 'border-drag-pink bg-gradient-to-br from-pink-50 to-purple-50' : 'border-transparent'}"
+                         onclick="toggleQueenSelection(${pokemon.id})">
+                        <div class="relative">
+                            <img src="${pokemon.image}" alt="${pokemon.name}" class="w-full h-32 object-contain sprite-pixel">
+                            ${AppState.selectedQueens.includes(pokemon.id) ? '<div class="absolute top-0 right-0 bg-drag-pink text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-xl">✓</div>' : ''}
+                        </div>
+                        <h3 class="font-bold text-center text-sm md:text-base mt-2">${pokemon.name}</h3>
+                        <div class="mt-2 space-y-1 text-xs">
+                            <div class="flex justify-between"><span>Acting:</span> <span class="font-bold">${pokemon.stats.acting}</span></div>
+                            <div class="flex justify-between"><span>Comedy:</span> <span class="font-bold">${pokemon.stats.comedy}</span></div>
+                            <div class="flex justify-between"><span>Dance:</span> <span class="font-bold">${pokemon.stats.dance}</span></div>
+                            <div class="flex justify-between"><span>Runway:</span> <span class="font-bold">${pokemon.stats.runway}</span></div>
+                            <div class="flex justify-between"><span>Lipsync:</span> <span class="font-bold">${pokemon.stats.lipsync}</span></div>
+                        </div>
                     </div>
-                    ${AppState.selectedQueens.includes(pokemon.id) ? '<p style="margin-top: 0.5rem; color: var(--accent-color); font-weight: 700;">✓ SELECTED</p>' : ''}
-                </div>
-            `).join('')}
-        </div>
+                `).join('')}
+            </div>
 
-        <div class="nav-buttons">
-            ${selectedCount >= 10 ? '<button class="button" onclick="startCompetition()">START COMPETITION</button>' : ''}
-        </div>
+            <div class="flex justify-center gap-4">
+                ${selectedCount >= 10 ? '<button class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg" onclick="startCompetition()">START COMPETITION ✨</button>' : ''}
+            </div>
 
-        ${selectedCount > 0 ? `<div class="selection-count">${selectedCount} Queens Selected</div>` : ''}
+            ${selectedCount > 0 ? `<div class="fixed bottom-8 right-8 bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-6 py-4 rounded-full shadow-2xl font-bold text-lg z-50 animate-bounce-slow">${selectedCount} Queens Selected</div>` : ''}
+        </div>
     `;
 }
 
 function renderEntrances() {
     return `
-        <h2>🌟 Queen Entrances 🌟</h2>
-        <div class="phase-container">
-            <div class="entrance-sequence">
-                ${AppState.cast.map((queen, index) => `
-                    <div class="entrance-item" style="animation-delay: ${index * 0.1}s;">
-                        <img src="${queen.image}" alt="${queen.name}" class="entrance-image">
-                        <div>
-                            <div class="pokemon-name">${queen.name}</div>
-                            <div class="entrance-quote">"${queen.entranceQuote}"</div>
-                            ${queen.storylines.map(s => `<span class="storyline-tag">${s}</span>`).join('')}
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8 text-drag-pink">🌟 Queen Entrances 🌟</h2>
+            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
+                <div class="space-y-4">
+                    ${AppState.cast.map((queen, index) => `
+                        <div class="flex items-center gap-4 p-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl animate-slideIn" style="animation-delay: ${index * 0.1}s;">
+                            <img src="${queen.image}" alt="${queen.name}" class="w-24 h-24 object-contain sprite-pixel">
+                            <div class="flex-1">
+                                <h3 class="font-bold text-xl text-drag-pink">${queen.name}</h3>
+                                <p class="italic text-gray-700 mt-1">"${queen.entranceQuote}"</p>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    ${queen.storylines.map(s => `<span class="bg-drag-pink text-white px-3 py-1 rounded-full text-xs font-bold">${s}</span>`).join('')}
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                `).join('')}
+                    `).join('')}
+                </div>
             </div>
-        </div>
-        <div class="nav-buttons">
-            <button class="button" onclick="nextPhase()">CONTINUE TO PROMO</button>
+            <div class="flex justify-center mt-8">
+                <button class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg" onclick="nextPhase()">CONTINUE TO PROMO 📸</button>
+            </div>
         </div>
     `;
 }
 
 function renderPromo() {
     return `
-        <h2>📸 Meet the Queens 📸</h2>
-        <div class="phase-container">
-            <div class="promo-grid">
-                ${AppState.cast.map(queen => `
-                    <div class="promo-card">
-                        <img src="${queen.image}" alt="${queen.name}">
-                        <h3>${queen.name}</h3>
-                        <p style="font-size: 0.85rem; margin-top: 0.5rem;">${queen.personality}</p>
-                    </div>
-                `).join('')}
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8 text-drag-pink">📸 Meet the Queens 📸</h2>
+            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl mb-8">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                    ${AppState.cast.map(queen => `
+                        <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-4 text-center">
+                            <img src="${queen.image}" alt="${queen.name}" class="w-full h-32 object-contain sprite-pixel">
+                            <h3 class="font-bold mt-2">${queen.name}</h3>
+                            <p class="text-xs text-gray-600 mt-1">${queen.personality}</p>
+                        </div>
+                    `).join('')}
+                </div>
             </div>
-        </div>
 
-        ${renderTrackRecordTable()}
-        ${renderSeasonStats()}
+            ${renderTrackRecordTable()}
+            ${renderSeasonStats()}
 
-        <div class="nav-buttons">
-            <button class="button" onclick="nextPhase()">START EPISODE 1</button>
+            <div class="flex justify-center mt-8">
+                <button class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg" onclick="nextPhase()">START EPISODE 1 🎬</button>
+            </div>
         </div>
     `;
 }
 
 function renderChallengeSelect() {
-    const episode = AppState.currentEpisode;
+    const episode = AppState.currentEpisode + 1;
     const queensLeft = AppState.cast.length;
 
     return `
-        <h2>🎬 Episode ${episode} 🎬</h2>
-        <p style="text-align: center; font-size: 1.2rem; margin: 1rem 0;">
-            ${queensLeft} Queens Remain
-        </p>
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4 text-drag-pink">🎬 Episode ${episode} 🎬</h2>
+            <p class="text-center text-2xl font-bold mb-8">${queensLeft} Queens Remain</p>
 
-        <div class="phase-container">
-            <h3>Select This Week's Challenge:</h3>
-            <div class="challenge-selector">
-                ${CHALLENGES.map(challenge => `
-                    <div class="challenge-card" onclick="selectChallenge('${challenge.type}', '${challenge.name}')">
-                        <h3>${challenge.name}</h3>
-                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">${challenge.description}</p>
+            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl mb-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">Select This Week's Challenge:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    ${CHALLENGES.map(challenge => `
+                        <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl border-4 border-transparent hover:border-drag-pink"
+                             onclick="selectChallenge('${challenge.type}', '${challenge.name}', '${challenge.emoji}')">
+                            <div class="text-4xl text-center mb-2">${challenge.emoji}</div>
+                            <h4 class="font-bold text-center text-lg mb-2">${challenge.name}</h4>
+                            <p class="text-sm text-gray-600 text-center">${challenge.description}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            ${renderTrackRecordTable()}
+            ${renderSeasonStats()}
+        </div>
+    `;
+}
+
+function renderProducerRoom() {
+    const currentEp = AppState.currentEpisode + 1;
+    const queensInComp = AppState.cast;
+    const challenge = AppState.pendingChallenge;
+
+    return `
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4 text-drag-purple">🎬 Producer's Room 🎬</h2>
+            <p class="text-center text-xl mb-8">Episode ${currentEp}: ${challenge.name}</p>
+
+            <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-6 md:p-8 shadow-xl mb-8">
+                <h3 class="text-2xl font-bold mb-4">Override Placements (Optional)</h3>
+                <p class="mb-6 text-gray-700">Leave as "Auto" to let the simulator decide, or manually set placements to control the narrative!</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-lg p-4">
+                        <label class="font-bold block mb-2">🏆 WIN:</label>
+                        <select class="w-full p-2 border-2 border-gray-300 rounded-lg" id="override-win">
+                            <option value="">Auto</option>
+                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
+                        </select>
                     </div>
-                `).join('')}
+
+                    <div class="bg-white rounded-lg p-4">
+                        <label class="font-bold block mb-2">⭐ HIGH (1):</label>
+                        <select class="w-full p-2 border-2 border-gray-300 rounded-lg" id="override-high1">
+                            <option value="">Auto</option>
+                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
+                        </select>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-4">
+                        <label class="font-bold block mb-2">⭐ HIGH (2):</label>
+                        <select class="w-full p-2 border-2 border-gray-300 rounded-lg" id="override-high2">
+                            <option value="">Auto</option>
+                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
+                        </select>
+                    </div>
+
+                    ${queensInComp.length > 5 ? `
+                        <div class="bg-white rounded-lg p-4">
+                            <label class="font-bold block mb-2">⚠️ LOW:</label>
+                            <select class="w-full p-2 border-2 border-gray-300 rounded-lg" id="override-low">
+                                <option value="">Auto</option>
+                                ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
+                            </select>
+                        </div>
+                    ` : ''}
+
+                    <div class="bg-white rounded-lg p-4">
+                        <label class="font-bold block mb-2">💔 BTM2 (1):</label>
+                        <select class="w-full p-2 border-2 border-gray-300 rounded-lg" id="override-btm1">
+                            <option value="">Auto</option>
+                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
+                        </select>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-4">
+                        <label class="font-bold block mb-2">💔 BTM2 (2):</label>
+                        <select class="w-full p-2 border-2 border-gray-300 rounded-lg" id="override-btm2">
+                            <option value="">Auto</option>
+                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-4">
+                <button class="bg-gradient-to-r from-drag-purple to-drag-purple-dark text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg" onclick="applyProducerOverrides()">CONTINUE TO EPISODE ▶️</button>
             </div>
         </div>
-
-        ${renderProducerRoom()}
-        ${renderTrackRecordTable()}
-        ${renderSeasonStats()}
     `;
 }
 
@@ -819,27 +921,30 @@ function renderChallengeAnnounce() {
     const currentEp = AppState.episodeData[AppState.episodeData.length - 1];
 
     return `
-        <h2>🎬 Episode ${AppState.currentEpisode} 🎬</h2>
-        <div class="phase-container">
-            <h3 style="text-align: center; font-size: 2rem; color: var(--accent-color);">
-                ${currentEp.challengeName}
-            </h3>
-            <p style="text-align: center; font-size: 1.2rem; margin: 2rem 0;">
-                This week, our queens will compete in a ${currentEp.challengeType} challenge!
-            </p>
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4 text-drag-pink">🎬 Episode ${AppState.currentEpisode} 🎬</h2>
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-8">
+                <div class="text-6xl text-center mb-4">${currentEp.emoji}</div>
+                <h3 class="text-3xl md:text-4xl font-bold text-center text-drag-pink mb-4">
+                    ${currentEp.challengeName}
+                </h3>
+                <p class="text-xl text-center text-gray-700 mb-8">
+                    This week, our queens will compete in a ${currentEp.challengeType} challenge!
+                </p>
 
-            ${AppState.seasonDrama.length > 0 ? `
-                <div class="drama-box">
-                    <h3>☕ Tea Time ☕</h3>
-                    ${AppState.seasonDrama.slice(-3).map(drama => `
-                        <p class="tea-spill">🗣️ ${drama}</p>
-                    `).join('')}
-                </div>
-            ` : ''}
-        </div>
+                ${AppState.seasonDrama.length > 0 ? `
+                    <div class="bg-gradient-to-r from-yellow-100 to-amber-100 border-l-4 border-yellow-500 rounded-lg p-6">
+                        <h4 class="text-2xl font-bold mb-4">☕ Tea Time ☕</h4>
+                        ${AppState.seasonDrama.slice(-3).map(drama => `
+                            <p class="italic mb-2">🗣️ ${drama}</p>
+                        `).join('')}
+                    </div>
+                ` : ''}
+            </div>
 
-        <div class="nav-buttons">
-            <button class="button" onclick="nextPhase()">SEE PERFORMANCES</button>
+            <div class="flex justify-center">
+                <button class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg" onclick="nextPhase()">SEE PERFORMANCES 🎭</button>
+            </div>
         </div>
     `;
 }
@@ -848,20 +953,23 @@ function renderPerformances() {
     const currentEp = AppState.episodeData[AppState.episodeData.length - 1];
 
     return `
-        <h2>🎭 ${currentEp.challengeName} Performances 🎭</h2>
-        <div class="phase-container">
-            <div class="performance-list">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8 text-drag-pink">🎭 ${currentEp.challengeName} Performances 🎭</h2>
+            <div class="space-y-4 mb-8">
                 ${currentEp.performances.map(perf => `
-                    <div class="performance-item">
-                        <div class="performance-queen">${perf.queen.name}</div>
-                        <p>${perf.description}</p>
+                    <div class="bg-white rounded-xl p-6 shadow-lg flex items-center gap-4">
+                        <img src="${perf.queen.image}" alt="${perf.queen.name}" class="w-20 h-20 object-contain sprite-pixel">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-drag-pink">${perf.queen.name}</h3>
+                            <p class="text-gray-700 mt-1">${perf.description}</p>
+                        </div>
                     </div>
                 `).join('')}
             </div>
-        </div>
 
-        <div class="nav-buttons">
-            <button class="button" onclick="nextPhase()">JUDGING & RESULTS</button>
+            <div class="flex justify-center">
+                <button class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg" onclick="nextPhase()">JUDGING & RESULTS 👑</button>
+            </div>
         </div>
     `;
 }
@@ -876,62 +984,82 @@ function renderResults() {
     const btmQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'BTM2');
 
     return `
-        <h2>👑 Episode ${AppState.currentEpisode} Results 👑</h2>
-        <div class="phase-container">
-            <div class="results-grid">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8 text-drag-pink">👑 Episode ${AppState.currentEpisode} Results 👑</h2>
+
+            <div class="space-y-6 mb-8">
                 ${winQueen ? `
-                    <div class="result-category" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 200, 0, 0.2) 100%);">
-                        <div class="result-title" style="color: goldenrod;">🏆 CHALLENGE WINNER 🏆</div>
-                        <div class="result-queens">
-                            <div class="queen-badge" style="background: gold; color: black; font-size: 1.1rem;">
-                                ${winQueen.name}
-                            </div>
+                    <div class="bg-gradient-to-r from-yellow-200 to-amber-200 rounded-2xl p-8 shadow-xl border-4 border-yellow-500">
+                        <h3 class="text-3xl font-bold text-center mb-4">🏆 CHALLENGE WINNER 🏆</h3>
+                        <div class="flex items-center justify-center gap-4 bg-white rounded-xl p-4">
+                            <img src="${winQueen.image}" alt="${winQueen.name}" class="w-24 h-24 object-contain sprite-pixel animate-bounce-slow">
+                            <span class="text-2xl font-bold text-yellow-700">${winQueen.name}</span>
                         </div>
                     </div>
                 ` : ''}
 
                 ${highQueens.length > 0 ? `
-                    <div class="result-category">
-                        <div class="result-title" style="color: green;">⭐ TOP QUEENS ⭐</div>
-                        <div class="result-queens">
-                            ${highQueens.map(q => `<div class="queen-badge" style="background: lightgreen; color: black;">${q.name}</div>`).join('')}
+                    <div class="bg-gradient-to-r from-green-100 to-emerald-100 rounded-2xl p-6 shadow-xl border-4 border-green-400">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-green-700">⭐ TOP QUEENS ⭐</h3>
+                        <div class="flex flex-wrap gap-3 justify-center">
+                            ${highQueens.map(q => `
+                                <div class="flex items-center gap-2 bg-white rounded-lg p-3 shadow">
+                                    <img src="${q.image}" alt="${q.name}" class="w-12 h-12 object-contain sprite-pixel">
+                                    <span class="font-bold">${q.name}</span>
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                 ` : ''}
 
                 ${safeQueens.length > 0 ? `
-                    <div class="result-category">
-                        <div class="result-title">SAFE</div>
-                        <div class="result-queens">
-                            ${safeQueens.map(q => `<div class="queen-badge" style="background: lightgray; color: black;">${q.name}</div>`).join('')}
+                    <div class="bg-gray-100 rounded-2xl p-6 shadow-xl">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-gray-700">SAFE</h3>
+                        <div class="flex flex-wrap gap-3 justify-center">
+                            ${safeQueens.map(q => `
+                                <div class="flex items-center gap-2 bg-white rounded-lg p-2 shadow">
+                                    <img src="${q.image}" alt="${q.name}" class="w-10 h-10 object-contain sprite-pixel">
+                                    <span class="text-sm font-bold">${q.name}</span>
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                 ` : ''}
 
                 ${lowQueens.length > 0 ? `
-                    <div class="result-category">
-                        <div class="result-title" style="color: orange;">⚠️ LOW ⚠️</div>
-                        <div class="result-queens">
-                            ${lowQueens.map(q => `<div class="queen-badge" style="background: orange; color: white;">${q.name}</div>`).join('')}
+                    <div class="bg-gradient-to-r from-orange-100 to-amber-100 rounded-2xl p-6 shadow-xl border-4 border-orange-400">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-orange-700">⚠️ LOW ⚠️</h3>
+                        <div class="flex flex-wrap gap-3 justify-center">
+                            ${lowQueens.map(q => `
+                                <div class="flex items-center gap-2 bg-white rounded-lg p-3 shadow">
+                                    <img src="${q.image}" alt="${q.name}" class="w-12 h-12 object-contain sprite-pixel">
+                                    <span class="font-bold">${q.name}</span>
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                 ` : ''}
 
                 ${btmQueens.length > 0 ? `
-                    <div class="result-category" style="background: rgba(255, 0, 0, 0.05);">
-                        <div class="result-title" style="color: red;">💔 BOTTOM TWO 💔</div>
-                        <div class="result-queens">
-                            ${btmQueens.map(q => `<div class="queen-badge" style="background: darkred; color: white;">${q.name}</div>`).join('')}
+                    <div class="bg-gradient-to-r from-red-200 to-pink-200 rounded-2xl p-8 shadow-xl border-4 border-red-500">
+                        <h3 class="text-3xl font-bold text-center mb-4 text-red-700">💔 BOTTOM TWO 💔</h3>
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            ${btmQueens.map(q => `
+                                <div class="flex items-center gap-3 bg-white rounded-xl p-4 shadow-lg">
+                                    <img src="${q.image}" alt="${q.name}" class="w-16 h-16 object-contain sprite-pixel">
+                                    <span class="text-xl font-bold">${q.name}</span>
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                 ` : ''}
             </div>
-        </div>
 
-        ${renderTrackRecordTable()}
+            ${renderTrackRecordTable()}
 
-        <div class="nav-buttons">
-            <button class="button" onclick="nextPhase()">LIP SYNC FOR YOUR LIFE</button>
+            <div class="flex justify-center mt-8">
+                <button class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg" onclick="nextPhase()">LIP SYNC FOR YOUR LIFE 💋</button>
+            </div>
         </div>
     `;
 }
@@ -941,148 +1069,154 @@ function renderLipsync() {
     const btmQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'BTM2');
 
     if (btmQueens.length !== 2) {
-        return '<p>Error: Expected 2 queens in bottom</p>';
+        return '<p class="text-center text-red-500">Error: Expected 2 queens in bottom</p>';
     }
 
     return `
-        <h2>💋 Lip Sync For Your Life 💋</h2>
-        <div class="phase-container">
-            <div class="lipsync-battle">
-                <h3 style="font-size: 1.5rem; margin-bottom: 2rem;">
-                    ${randomChoice(LIPSYNC_DESCRIPTIONS)}
-                </h3>
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8 text-drag-pink">💋 Lip Sync For Your Life 💋</h2>
+            <div class="bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl p-8 shadow-xl mb-8">
+                <div class="bg-white rounded-xl p-6 mb-6">
+                    <p class="text-xl text-center italic text-gray-700">
+                        ${randomChoice(LIPSYNC_DESCRIPTIONS)}
+                    </p>
+                </div>
 
-                <div class="lipsync-queens">
-                    <div class="lipsync-queen">
-                        <img src="${btmQueens[0].image}" alt="${btmQueens[0].name}">
-                        <h3>${btmQueens[0].name}</h3>
-                        <p>Lipsync Skill: ${btmQueens[0].stats.lipsync}/10</p>
+                <div class="flex flex-col md:flex-row items-center justify-around gap-8 mb-8">
+                    <div class="text-center">
+                        <div class="bg-white rounded-2xl p-6 shadow-lg">
+                            <img src="${btmQueens[0].image}" alt="${btmQueens[0].name}" class="w-32 h-32 object-contain mx-auto sprite-pixel">
+                            <h3 class="font-bold text-xl mt-4">${btmQueens[0].name}</h3>
+                            <p class="text-sm text-gray-600 mt-2">Lipsync Skill: ${btmQueens[0].stats.lipsync}/10</p>
+                        </div>
                     </div>
 
-                    <div class="vs">VS</div>
+                    <div class="text-6xl font-bold text-drag-pink">VS</div>
 
-                    <div class="lipsync-queen">
-                        <img src="${btmQueens[1].image}" alt="${btmQueens[1].name}">
-                        <h3>${btmQueens[1].name}</h3>
-                        <p>Lipsync Skill: ${btmQueens[1].stats.lipsync}/10</p>
+                    <div class="text-center">
+                        <div class="bg-white rounded-2xl p-6 shadow-lg">
+                            <img src="${btmQueens[1].image}" alt="${btmQueens[1].name}" class="w-32 h-32 object-contain mx-auto sprite-pixel">
+                            <h3 class="font-bold text-xl mt-4">${btmQueens[1].name}</h3>
+                            <p class="text-sm text-gray-600 mt-2">Lipsync Skill: ${btmQueens[1].stats.lipsync}/10</p>
+                        </div>
                     </div>
                 </div>
 
-                <h3 style="margin-top: 2rem;">Who stays?</h3>
-                <div class="nav-buttons">
-                    <button class="button" onclick="eliminateQueen(${btmQueens[1].id})">${btmQueens[0].name} STAYS</button>
-                    <button class="button" onclick="eliminateQueen(${btmQueens[0].id})">${btmQueens[1].name} STAYS</button>
+                <h3 class="text-2xl font-bold text-center mb-4">Who stays?</h3>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <button class="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-lg" onclick="eliminateQueen(${btmQueens[1].id})">${btmQueens[0].name} SHANTAY YOU STAY</button>
+                    <button class="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-lg" onclick="eliminateQueen(${btmQueens[0].id})">${btmQueens[1].name} SHANTAY YOU STAY</button>
                 </div>
             </div>
-        </div>
 
-        ${renderTrackRecordTable()}
+            ${renderTrackRecordTable()}
+        </div>
     `;
 }
 
 function renderElimination() {
     const eliminatedQueen = AppState.eliminated[AppState.eliminated.length - 1];
-    const currentEp = AppState.episodeData[AppState.episodeData.length - 1];
 
     return `
-        <h2>😢 Elimination 😢</h2>
-        <div class="phase-container">
-            <div style="text-align: center; padding: 2rem;">
-                <img src="${eliminatedQueen.image}" style="width: 200px; height: 200px; object-fit: contain;" alt="${eliminatedQueen.name}">
-                <h3 style="font-size: 2rem; margin: 1rem 0; color: var(--accent-color);">
-                    ${eliminatedQueen.name}
-                </h3>
-                <p style="font-size: 1.2rem; font-style: italic; margin: 1rem 0;">
-                    "Now, sashay away..."
-                </p>
-                <p style="margin: 1rem 0;">
-                    Eliminated in Episode ${AppState.currentEpisode}
-                </p>
-                <div class="drama-box" style="margin: 2rem auto; max-width: 600px;">
-                    <p style="font-style: italic;">
-                        "${eliminatedQueen.name} gave us ${currentEp.challengeName} that we won't forget.
-                        Their journey ends here, but their legacy continues."
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-700">😢 Elimination 😢</h2>
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-8 text-center">
+                <img src="${eliminatedQueen.image}" class="w-48 h-48 mx-auto object-contain sprite-pixel opacity-60" alt="${eliminatedQueen.name}">
+                <h3 class="text-3xl font-bold mt-6 text-gray-600">${eliminatedQueen.name}</h3>
+                <p class="text-2xl italic mt-4 text-gray-500">"Now, sashay away..."</p>
+                <p class="text-lg mt-4 text-gray-600">Eliminated in Episode ${AppState.currentEpisode}</p>
+                <div class="bg-gradient-to-r from-yellow-100 to-amber-100 border-l-4 border-yellow-500 rounded-lg p-6 mt-6 max-w-2xl mx-auto">
+                    <p class="italic text-gray-700">
+                        "${eliminatedQueen.name}'s journey may end here, but their legacy in this competition will not be forgotten. From their stunning entrance to their final performance, they've given us moments we'll remember forever."
                     </p>
                 </div>
             </div>
-        </div>
 
-        ${renderTrackRecordTable()}
-        ${renderSeasonStats()}
+            ${renderTrackRecordTable()}
+            ${renderSeasonStats()}
 
-        <div class="nav-buttons">
-            ${AppState.cast.length === 4 ?
-                '<button class="button" onclick="nextPhase()">GRAND FINALE</button>' :
-                '<button class="button" onclick="nextPhase()">NEXT EPISODE</button>'
-            }
+            <div class="flex justify-center mt-8">
+                ${AppState.cast.length === 4 ?
+                    '<button class="bg-gradient-to-r from-yellow-500 to-amber-600 text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg animate-pulse-slow" onclick="nextPhase()">✨ GRAND FINALE ✨</button>' :
+                    '<button class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg" onclick="nextPhase()">NEXT EPISODE ▶️</button>'
+                }
+            </div>
         </div>
     `;
 }
 
 function renderFinale() {
     return `
-        <h2>✨ GRAND FINALE ✨</h2>
-        <div class="finale-stage">
-            <h3 style="font-size: 2.5rem; margin-bottom: 2rem;">Top 4 Final Performances!</h3>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
-                Our final four queens compete in the ultimate Rumix challenge!
-            </p>
-        </div>
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-gradient-to-r from-yellow-400 to-amber-500 rounded-2xl p-12 shadow-2xl text-white text-center mb-8">
+                <h2 class="text-5xl font-bold mb-4">✨ GRAND FINALE ✨</h2>
+                <p class="text-2xl">Our final four queens compete in the ultimate Rumix challenge!</p>
+            </div>
 
-        <div class="phase-container">
-            <div class="top4-grid">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 ${AppState.cast.map(queen => `
-                    <div class="finalist-card">
-                        <img src="${queen.image}" style="width: 100%; height: 150px; object-fit: contain;">
-                        <h3 style="margin: 1rem 0;">${queen.name}</h3>
-                        <div class="stats">
+                    <div class="bg-white rounded-2xl p-6 shadow-xl">
+                        <img src="${queen.image}" class="w-full h-40 object-contain sprite-pixel" alt="${queen.name}">
+                        <h3 class="font-bold text-xl text-center mt-4">${queen.name}</h3>
+                        <div class="mt-4 space-y-2 text-sm">
                             ${Object.entries(AppState.trackRecords[queen.id] || {})
-                                .filter(([k]) => k !== 'SAFE')
+                                .filter(([k]) => k !== 'SAFE' && k !== 'ELIM')
                                 .map(([placement, count]) => `
-                                    <div class="stat-row">
-                                        <span class="placement-badge ${placement}">${placement}</span>
-                                        <span>×${count}</span>
+                                    <div class="flex justify-between items-center">
+                                        <span class="px-2 py-1 rounded text-xs font-bold ${
+                                            placement === 'WIN' ? 'bg-win text-black' :
+                                            placement === 'HIGH' ? 'bg-high text-black' :
+                                            placement === 'LOW' ? 'bg-low text-black' :
+                                            placement === 'BTM2' ? 'bg-btm text-white' :
+                                            'bg-gray-200 text-black'
+                                        }">${placement}</span>
+                                        <span class="font-bold">×${count}</span>
                                     </div>
                                 `).join('')}
                         </div>
                     </div>
                 `).join('')}
             </div>
-        </div>
 
-        ${renderTrackRecordTable()}
-        ${renderSeasonStats()}
+            ${renderTrackRecordTable()}
+            ${renderSeasonStats()}
 
-        <div class="nav-buttons">
-            <h3>Who should win?</h3>
-            ${AppState.cast.map(queen => `
-                <button class="button" onclick="crownWinner(${queen.id})">${queen.name}</button>
-            `).join('')}
+            <div class="bg-white rounded-2xl p-8 shadow-xl mb-8">
+                <h3 class="text-3xl font-bold text-center mb-6 text-drag-pink">👑 Who should win? 👑</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    ${AppState.cast.map(queen => `
+                        <button class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-6 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-lg flex items-center gap-4"
+                                onclick="crownWinner(${queen.id})">
+                            <img src="${queen.image}" class="w-16 h-16 object-contain sprite-pixel" alt="${queen.name}">
+                            <span class="flex-1">${queen.name}</span>
+                            <span class="text-2xl">👑</span>
+                        </button>
+                    `).join('')}
+                </div>
+            </div>
         </div>
     `;
 }
 
 function renderWinner() {
-    const winner = AppState.cast[0]; // Winner is the only one left
+    const winner = AppState.cast[0];
 
     return `
-        <h2>👑 AMERICA'S NEXT DRAG SUPERSTAR 👑</h2>
-        <div class="finale-stage">
-            <div class="crown-icon">👑</div>
-            <img src="${winner.image}" style="width: 300px; height: 300px; object-fit: contain; margin: 2rem auto;">
-            <h3 style="font-size: 3rem; margin: 2rem 0;">
-                ${winner.name}
-            </h3>
-            <p style="font-size: 1.5rem;">
-                Congratulations, you're a WINNER baby!
-            </p>
-        </div>
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-r from-yellow-400 to-amber-500 rounded-2xl p-12 shadow-2xl text-white text-center mb-8">
+                <div class="text-8xl mb-4 animate-bounce-slow">👑</div>
+                <h2 class="text-5xl font-bold mb-8">AMERICA'S NEXT DRAG SUPERSTAR</h2>
+                <img src="${winner.image}" class="w-64 h-64 mx-auto object-contain sprite-pixel" alt="${winner.name}">
+                <h3 class="text-6xl font-bold mt-8 mb-4">${winner.name}</h3>
+                <p class="text-3xl">Congratulations, you're a WINNER baby!</p>
+            </div>
 
-        ${renderTrackRecordTable()}
-        ${renderSeasonStats()}
+            ${renderTrackRecordTable()}
+            ${renderSeasonStats()}
 
-        <div class="nav-buttons">
-            <button class="button" onclick="location.reload()">START NEW SEASON</button>
+            <div class="flex justify-center mt-8">
+                <button class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white px-8 py-4 rounded-lg font-bold text-xl hover:scale-105 transition-transform shadow-lg" onclick="location.reload()">🌟 START NEW SEASON 🌟</button>
+            </div>
         </div>
     `;
 }
@@ -1092,55 +1226,74 @@ function renderTrackRecordTable() {
         return '';
     }
 
-    // Get all queens (current + eliminated) sorted by placement
-    const allQueens = [...AppState.cast, ...AppState.eliminated];
+    // Get all queens (current + eliminated) sorted correctly
+    const activeQueens = [...AppState.cast].sort((a, b) => {
+        const aWins = (AppState.trackRecords[a.id]?.WIN || 0);
+        const bWins = (AppState.trackRecords[b.id]?.WIN || 0);
+        if (aWins !== bWins) return bWins - aWins;
 
-    // Sort: current queens by track record, then eliminated in reverse order of elimination
+        const aHighs = (AppState.trackRecords[a.id]?.HIGH || 0);
+        const bHighs = (AppState.trackRecords[b.id]?.HIGH || 0);
+        return bHighs - aHighs;
+    });
+
     const sortedQueens = [
-        ...AppState.cast.sort((a, b) => {
-            const aWins = (AppState.trackRecords[a.id]?.WIN || 0);
-            const bWins = (AppState.trackRecords[b.id]?.WIN || 0);
-            if (aWins !== bWins) return bWins - aWins;
-
-            const aHighs = (AppState.trackRecords[a.id]?.HIGH || 0);
-            const bHighs = (AppState.trackRecords[b.id]?.HIGH || 0);
-            return bHighs - aHighs;
-        }),
+        ...activeQueens,
         ...[...AppState.eliminated].reverse()
     ];
 
     return `
-        <div class="track-record-table">
-            <h3 style="padding: 1rem; background: white;">📊 Track Record</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Queen</th>
-                        ${AppState.episodeData.map((ep, i) => `<th>E${i + 1}</th>`).join('')}
-                        <th>Stats</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${sortedQueens.map(queen => {
-                        const isEliminated = AppState.eliminated.includes(queen);
-                        return `
-                            <tr style="${isEliminated ? 'opacity: 0.6;' : ''}">
-                                <td><strong>${queen.name}</strong></td>
-                                ${AppState.episodeData.map(ep => {
-                                    const placement = ep.placements[queen.id] || 'SAFE';
-                                    return `<td><span class="placement-badge ${placement}">${placement}</span></td>`;
-                                }).join('')}
-                                <td style="font-size: 0.75rem;">
-                                    ${Object.entries(AppState.trackRecords[queen.id] || {})
-                                        .filter(([k]) => k !== 'SAFE')
-                                        .map(([k, v]) => `${k}:${v}`)
-                                        .join(' | ') || 'No data'}
-                                </td>
-                            </tr>
-                        `;
-                    }).join('')}
-                </tbody>
-            </table>
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-8">
+            <h3 class="bg-gradient-to-r from-drag-pink to-drag-pink-dark text-white text-2xl font-bold p-4 text-center">📊 Track Record</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-pink-100 to-purple-100">
+                            <th class="p-3 text-left font-bold">Queen</th>
+                            ${AppState.episodeData.map((ep, i) => `<th class="p-3 text-center font-bold text-sm">E${i + 1}</th>`).join('')}
+                            <th class="p-3 text-center font-bold">Stats</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${sortedQueens.map(queen => {
+                            const isEliminated = AppState.eliminated.includes(queen);
+                            return `
+                                <tr class="border-b hover:bg-pink-50 ${isEliminated ? 'opacity-60' : ''}">
+                                    <td class="p-3">
+                                        <div class="flex items-center gap-2">
+                                            <img src="${queen.image}" class="w-8 h-8 object-contain sprite-pixel" alt="${queen.name}">
+                                            <span class="font-bold">${queen.name}</span>
+                                        </div>
+                                    </td>
+                                    ${AppState.episodeData.map(ep => {
+                                        const placement = ep.placements[queen.id] || '';
+                                        if (!placement) return '<td class="p-3"></td>';
+                                        return `<td class="p-3 text-center">
+                                            <span class="px-2 py-1 rounded text-xs font-bold inline-block ${
+                                                placement === 'WIN' ? 'bg-win text-black' :
+                                                placement === 'HIGH' ? 'bg-high text-black' :
+                                                placement === 'SAFE' ? 'bg-safe text-black' :
+                                                placement === 'LOW' ? 'bg-low text-black' :
+                                                placement === 'BTM2' ? 'bg-btm text-white' :
+                                                placement === 'ELIM' ? 'bg-elim text-white' :
+                                                placement === 'RUNNER' ? 'bg-gradient-to-r from-gray-300 to-gray-400 text-black' :
+                                                placement === 'WINNER' ? 'bg-gradient-to-r from-yellow-400 to-amber-500 text-black' :
+                                                'bg-gray-200 text-black'
+                                            }">${placement}</span>
+                                        </td>`;
+                                    }).join('')}
+                                    <td class="p-3 text-xs text-center">
+                                        ${Object.entries(AppState.trackRecords[queen.id] || {})
+                                            .filter(([k]) => k !== 'SAFE')
+                                            .map(([k, v]) => `${k}:${v}`)
+                                            .join(' ') || '-'}
+                                    </td>
+                                </tr>
+                            `;
+                        }).join('')}
+                    </tbody>
+                </table>
+            </div>
         </div>
     `;
 }
@@ -1152,101 +1305,35 @@ function renderSeasonStats() {
     const dramaCount = AppState.seasonDrama.length;
 
     return `
-        <div class="season-stats">
-            <h3>📈 Season Statistics</h3>
-            <div class="stat-grid">
-                <div class="stat-card">
-                    <div class="stat-value">${totalEpisodes}</div>
-                    <div class="stat-label">Episodes</div>
+        <div class="bg-white rounded-2xl p-6 shadow-xl mb-8">
+            <h3 class="text-2xl font-bold mb-6 text-center text-drag-pink">📈 Season Statistics</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-4 text-center">
+                    <div class="text-4xl font-bold text-drag-pink">${totalEpisodes}</div>
+                    <div class="text-sm text-gray-600 mt-1">Episodes</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-value">${queensRemaining}</div>
-                    <div class="stat-label">Queens Remaining</div>
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-4 text-center">
+                    <div class="text-4xl font-bold text-drag-pink">${queensRemaining}</div>
+                    <div class="text-sm text-gray-600 mt-1">Remaining</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-value">${queensEliminated}</div>
-                    <div class="stat-label">Eliminated</div>
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-4 text-center">
+                    <div class="text-4xl font-bold text-drag-pink">${queensEliminated}</div>
+                    <div class="text-sm text-gray-600 mt-1">Eliminated</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-value">${dramaCount}</div>
-                    <div class="stat-label">Drama Moments</div>
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-4 text-center">
+                    <div class="text-4xl font-bold text-drag-pink">${dramaCount}</div>
+                    <div class="text-sm text-gray-600 mt-1">Drama Moments</div>
                 </div>
             </div>
 
             ${AppState.seasonDrama.length > 0 ? `
-                <div class="drama-box" style="margin-top: 2rem;">
-                    <h3>☕ Season Tea ☕</h3>
+                <div class="bg-gradient-to-r from-yellow-100 to-amber-100 border-l-4 border-yellow-500 rounded-lg p-6">
+                    <h4 class="text-xl font-bold mb-4">☕ Season Tea ☕</h4>
                     ${AppState.seasonDrama.slice(-5).reverse().map(drama => `
-                        <p class="tea-spill">🗣️ ${drama}</p>
+                        <p class="italic mb-2 text-gray-700">🗣️ ${drama}</p>
                     `).join('')}
                 </div>
             ` : ''}
-        </div>
-    `;
-}
-
-function renderProducerRoom() {
-    const currentEp = AppState.currentEpisode;
-    const queensInComp = AppState.cast;
-
-    return `
-        <div class="producer-room">
-            <h3>🎬 Producer's Room - Override Placements 🎬</h3>
-            <p style="margin-bottom: 1rem;">Manually set placements for Episode ${currentEp}</p>
-
-            <div class="episode-override">
-                <div class="placement-selector">
-                    <div>
-                        <label><strong>WIN:</strong></label>
-                        <select class="placement-select" id="override-win">
-                            <option value="">Auto</option>
-                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
-                        </select>
-                    </div>
-
-                    <div>
-                        <label><strong>HIGH 1:</strong></label>
-                        <select class="placement-select" id="override-high1">
-                            <option value="">Auto</option>
-                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
-                        </select>
-                    </div>
-
-                    <div>
-                        <label><strong>HIGH 2:</strong></label>
-                        <select class="placement-select" id="override-high2">
-                            <option value="">Auto</option>
-                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
-                        </select>
-                    </div>
-
-                    ${queensInComp.length > 5 ? `
-                        <div>
-                            <label><strong>LOW:</strong></label>
-                            <select class="placement-select" id="override-low">
-                                <option value="">Auto</option>
-                                ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
-                            </select>
-                        </div>
-                    ` : ''}
-
-                    <div>
-                        <label><strong>BTM2 (1):</strong></label>
-                        <select class="placement-select" id="override-btm1">
-                            <option value="">Auto</option>
-                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
-                        </select>
-                    </div>
-
-                    <div>
-                        <label><strong>BTM2 (2):</strong></label>
-                        <select class="placement-select" id="override-btm2">
-                            <option value="">Auto</option>
-                            ${queensInComp.map(q => `<option value="${q.id}">${q.name}</option>`).join('')}
-                        </select>
-                    </div>
-                </div>
-            </div>
         </div>
     `;
 }
@@ -1298,6 +1385,7 @@ function nextPhase() {
         'ENTRANCES',
         'PROMO',
         'CHALLENGE_SELECT',
+        'PRODUCER_ROOM',
         'CHALLENGE_ANNOUNCE',
         'PERFORMANCES',
         'RESULTS',
@@ -1319,7 +1407,6 @@ function nextPhase() {
             AppState.currentPhase = 'CHALLENGE_SELECT';
         }
     } else if (AppState.currentPhase === 'FINALE') {
-        // Don't auto-advance, wait for winner selection
         return;
     } else {
         AppState.currentPhase = phaseOrder[currentIndex + 1];
@@ -1328,7 +1415,19 @@ function nextPhase() {
     render();
 }
 
-function selectChallenge(challengeType, challengeName) {
+function selectChallenge(challengeType, challengeName, emoji) {
+    // Store challenge info and go to producer room
+    AppState.pendingChallenge = {
+        type: challengeType,
+        name: challengeName,
+        emoji: emoji
+    };
+
+    AppState.currentPhase = 'PRODUCER_ROOM';
+    render();
+}
+
+function applyProducerOverrides() {
     // Get producer overrides if any
     const overrides = {};
 
@@ -1337,41 +1436,47 @@ function selectChallenge(challengeType, challengeName) {
 
     const high1 = document.getElementById('override-high1')?.value;
     const high2 = document.getElementById('override-high2')?.value;
-    if (high1 || high2) {
-        overrides.HIGH = [high1, high2].filter(v => v).map(v => parseInt(v));
-    }
+    const highs = [high1, high2].filter(v => v).map(v => parseInt(v));
+    if (highs.length > 0) overrides.HIGH = highs;
 
     const lowOverride = document.getElementById('override-low')?.value;
     if (lowOverride) overrides.LOW = parseInt(lowOverride);
 
     const btm1 = document.getElementById('override-btm1')?.value;
     const btm2 = document.getElementById('override-btm2')?.value;
-    if (btm1 || btm2) {
-        overrides.BTM2 = [btm1, btm2].filter(v => v).map(v => parseInt(v));
-    }
+    const btms = [btm1, btm2].filter(v => v).map(v => parseInt(v));
+    if (btms.length > 0) overrides.BTM2 = btms;
+
+    const challenge = AppState.pendingChallenge;
 
     // Calculate placements
-    const { placements, performances } = assignPlacements(AppState.cast, challengeType, overrides);
+    const { placements, performances } = assignPlacements(AppState.cast, challenge.type, overrides);
 
     // Create episode data
     AppState.currentEpisode++;
     const episodeData = {
         episode: AppState.currentEpisode,
-        challengeName,
-        challengeType,
+        challengeName: challenge.name,
+        challengeType: challenge.type,
+        emoji: challenge.emoji,
         placements,
         performances
     };
 
     AppState.episodeData.push(episodeData);
 
-    // Update track records
+    // Update track records - ONLY for current cast members
     Object.entries(placements).forEach(([queenId, placement]) => {
         const id = parseInt(queenId);
-        if (!AppState.trackRecords[id]) {
-            AppState.trackRecords[id] = {};
+        const queen = AppState.cast.find(q => q.id === id);
+
+        // Only update track record if queen is still in competition
+        if (queen) {
+            if (!AppState.trackRecords[id]) {
+                AppState.trackRecords[id] = {};
+            }
+            AppState.trackRecords[id][placement] = (AppState.trackRecords[id][placement] || 0) + 1;
         }
-        AppState.trackRecords[id][placement] = (AppState.trackRecords[id][placement] || 0) + 1;
     });
 
     // Generate drama
@@ -1380,6 +1485,7 @@ function selectChallenge(challengeType, challengeName) {
         AppState.seasonDrama.push(drama);
     }
 
+    AppState.pendingChallenge = null;
     AppState.currentPhase = 'CHALLENGE_ANNOUNCE';
     render();
 }
@@ -1412,6 +1518,7 @@ function crownWinner(winnerId) {
         episode: AppState.currentEpisode + 1,
         challengeName: 'Grand Finale',
         challengeType: 'rumix',
+        emoji: '👑',
         placements: {},
         performances: []
     };
