@@ -1,4 +1,148 @@
 // ========================================
+// GAG-WORTHY VISUAL EFFECTS! 💅✨
+// ========================================
+
+const GagEffects = {
+    // CONFETTI for winners!
+    winnerConfetti: function() {
+        const duration = 3000;
+        const end = Date.now() + duration;
+
+        (function frame() {
+            confetti({
+                particleCount: 7,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0 },
+                colors: ['#FFD700', '#FFA500', '#FF69B4', '#FF1493']
+            });
+            confetti({
+                particleCount: 7,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1 },
+                colors: ['#FFD700', '#FFA500', '#FF69B4', '#FF1493']
+            });
+
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+        }());
+    },
+
+    // SPARKLE burst!
+    sparkleBurst: function() {
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: ['#FFD700', '#FFF', '#FF69B4', '#00FFFF', '#FF1493']
+        });
+    },
+
+    // DRAMATIC shake animation
+    shakeElement: function(elementId) {
+        const el = document.getElementById(elementId);
+        if (el) {
+            el.style.animation = 'shake 0.5s';
+            setTimeout(() => el.style.animation = '', 500);
+        }
+    },
+
+    // HEART explosion for emotional moments
+    heartExplosion: function() {
+        const count = 50;
+        const defaults = {
+            origin: { y: 0.7 },
+            shapes: ['circle'],
+            colors: ['#FF1493', '#FF69B4', '#FFB6C1']
+        };
+
+        confetti({
+            ...defaults,
+            particleCount: count,
+            spread: 100,
+            startVelocity: 30,
+        });
+    },
+
+    // STAR shower for high placements
+    starShower: function() {
+        confetti({
+            particleCount: 50,
+            spread: 60,
+            origin: { y: 0 },
+            shapes: ['star'],
+            colors: ['#FFD700', '#FFA500', '#FFFF00']
+        });
+    }
+};
+
+// Challenge-specific visual themes!
+const CHALLENGE_THEMES = {
+    'acting': {
+        name: '🎭 Acting Challenge',
+        gradient: 'linear-gradient(135deg, #9C27B0 0%, #E91E63 100%)',
+        emoji: '🎭',
+        confettiColors: ['#9C27B0', '#E91E63', '#F06292']
+    },
+    'improv': {
+        name: '🃏 Snatch Game',
+        gradient: 'linear-gradient(135deg, #FF6F00 0%, #FFC107 100%)',
+        emoji: '🃏',
+        confettiColors: ['#FF6F00', '#FFC107', '#FFD54F']
+    },
+    'comedy': {
+        name: '😂 Stand-Up Comedy',
+        gradient: 'linear-gradient(135deg, #00BCD4 0%, #03A9F4 100%)',
+        emoji: '😂',
+        confettiColors: ['#00BCD4', '#03A9F4', '#4FC3F7']
+    },
+    'dance': {
+        name: '💃 Choreography Challenge',
+        gradient: 'linear-gradient(135deg, #FF1744 0%, #F50057 100%)',
+        emoji: '💃',
+        confettiColors: ['#FF1744', '#F50057', '#FF4081']
+    },
+    'design': {
+        name: '✂️ Design Challenge',
+        gradient: 'linear-gradient(135deg, #7B1FA2 0%, #9C27B0 100%)',
+        emoji: '✂️',
+        confettiColors: ['#7B1FA2', '#9C27B0', '#BA68C8']
+    },
+    'runway': {
+        name: '👗 Runway Extravaganza',
+        gradient: 'linear-gradient(135deg, #C2185B 0%, #E91E63 100%)',
+        emoji: '👗',
+        confettiColors: ['#C2185B', '#E91E63', '#F06292']
+    },
+    'makeover': {
+        name: '💄 Makeover Challenge',
+        gradient: 'linear-gradient(135deg, #D81B60 0%, #F06292 100%)',
+        emoji: '💄',
+        confettiColors: ['#D81B60', '#F06292', '#F48FB1']
+    },
+    'rusical': {
+        name: '🎤 Rusical',
+        gradient: 'linear-gradient(135deg, #6A1B9A 0%, #8E24AA 100%)',
+        emoji: '🎤',
+        confettiColors: ['#6A1B9A', '#8E24AA', '#AB47BC']
+    },
+    'rumix': {
+        name: '🎵 Girl Groups',
+        gradient: 'linear-gradient(135deg, #AD1457 0%, #C2185B 100%)',
+        emoji: '🎵',
+        confettiColors: ['#AD1457', '#C2185B', '#E91E63']
+    },
+    'lipsync': {
+        name: '💋 Lip Sync',
+        gradient: 'linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%)',
+        emoji: '💋',
+        confettiColors: ['#B71C1C', '#D32F2F', '#E57373']
+    }
+};
+
+// ========================================
 // POKEMON DATA
 // ========================================
 
@@ -7,7 +151,7 @@ const POKEMON_DATABASE = [
         id: 1,
         name: "Gardevoir",
         dexNumber: 282,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -29,7 +173,7 @@ const POKEMON_DATABASE = [
         id: 2,
         name: "Lopunny",
         dexNumber: 428,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/428.png",
         stats: {
             acting: 7,
             improv: 9,
@@ -51,7 +195,7 @@ const POKEMON_DATABASE = [
         id: 3,
         name: "Milotic",
         dexNumber: 350,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -73,7 +217,7 @@ const POKEMON_DATABASE = [
         id: 4,
         name: "Tsareena",
         dexNumber: 763,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -95,7 +239,7 @@ const POKEMON_DATABASE = [
         id: 5,
         name: "Primarina",
         dexNumber: 730,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png",
         stats: {
             acting: 9,
             improv: 7,
@@ -117,7 +261,7 @@ const POKEMON_DATABASE = [
         id: 6,
         name: "Vespiquen",
         dexNumber: 416,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/416.png",
         stats: {
             acting: 8,
             improv: 9,
@@ -139,7 +283,7 @@ const POKEMON_DATABASE = [
         id: 7,
         name: "Florges",
         dexNumber: 671,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/671.png",
         stats: {
             acting: 7,
             improv: 7,
@@ -161,7 +305,7 @@ const POKEMON_DATABASE = [
         id: 8,
         name: "Delphox",
         dexNumber: 655,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/655.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -183,7 +327,7 @@ const POKEMON_DATABASE = [
         id: 9,
         name: "Salazzle",
         dexNumber: 758,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/758.png",
         stats: {
             acting: 8,
             improv: 10,
@@ -205,7 +349,7 @@ const POKEMON_DATABASE = [
         id: 10,
         name: "Kangaskhan",
         dexNumber: 115,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -227,7 +371,7 @@ const POKEMON_DATABASE = [
         id: 11,
         name: "Nidoqueen",
         dexNumber: 31,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -249,7 +393,7 @@ const POKEMON_DATABASE = [
         id: 12,
         name: "Lilligant",
         dexNumber: 549,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/549.png",
         stats: {
             acting: 7,
             improv: 6,
@@ -271,7 +415,7 @@ const POKEMON_DATABASE = [
         id: 13,
         name: "Gothitelle",
         dexNumber: 576,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/576.png",
         stats: {
             acting: 9,
             improv: 7,
@@ -293,7 +437,7 @@ const POKEMON_DATABASE = [
         id: 14,
         name: "Froslass",
         dexNumber: 478,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -315,7 +459,7 @@ const POKEMON_DATABASE = [
         id: 15,
         name: "Cinccino",
         dexNumber: 573,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/573.png",
         stats: {
             acting: 7,
             improv: 9,
@@ -337,7 +481,7 @@ const POKEMON_DATABASE = [
         id: 16,
         name: "Mismagius",
         dexNumber: 429,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/429.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -359,7 +503,7 @@ const POKEMON_DATABASE = [
         id: 17,
         name: "Cresselia",
         dexNumber: 488,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/488.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -381,7 +525,7 @@ const POKEMON_DATABASE = [
         id: 18,
         name: "Bellossom",
         dexNumber: 182,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/182.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -403,7 +547,7 @@ const POKEMON_DATABASE = [
         id: 19,
         name: "Ninetales (Alola)",
         dexNumber: 38,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -425,7 +569,7 @@ const POKEMON_DATABASE = [
         id: 20,
         name: "Meloetta",
         dexNumber: 648,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/648.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -622,10 +766,19 @@ function assignPlacements(queensInCompetition, challengeType, overrides = {}) {
     // Apply overrides or assign based on performance
     let assigned = 0;
 
-    // WIN
+    // WIN (supports single winner OR double win!)
     if (overrides.WIN) {
-        placements[overrides.WIN] = 'WIN';
-        assigned++;
+        if (Array.isArray(overrides.WIN)) {
+            // DOUBLE WIN! 🏆🏆
+            overrides.WIN.forEach(id => {
+                placements[id] = 'WIN';
+                assigned++;
+            });
+        } else {
+            // Single winner
+            placements[overrides.WIN] = 'WIN';
+            assigned++;
+        }
     } else {
         placements[performances[0].queen.id] = 'WIN';
         assigned++;
@@ -712,6 +865,9 @@ function render() {
             break;
         case 'ELIMINATION':
             app.innerHTML = renderElimination();
+            break;
+        case 'DOUBLE_SHANTAY':
+            app.innerHTML = renderDoubleShantay();
             break;
         case 'FINALE':
             app.innerHTML = renderFinale();
@@ -837,18 +993,29 @@ function renderChallengeSelect() {
 
 function renderChallengeAnnounce() {
     const currentEp = AppState.episodeData[AppState.episodeData.length - 1];
+    const theme = CHALLENGE_THEMES[currentEp.challengeType] || CHALLENGE_THEMES['acting'];
+
+    // TRIGGER CONFETTI on page load! 🎉
+    setTimeout(() => {
+        confetti({
+            particleCount: 50,
+            spread: 70,
+            origin: { y: 0.6 },
+            colors: theme.confettiColors
+        });
+    }, 500);
 
     return `
         <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">🎬 Episode ${AppState.currentEpisode} 🎬</h2>
 
-        <!-- Challenge Banner -->
-        <div style="background: linear-gradient(135deg, #FF69B4 0%, #FF1493 50%, #C71585 100%); padding: 3rem 2rem; border-radius: 16px; text-align: center; box-shadow: 0 8px 20px rgba(255, 20, 147, 0.4); margin-bottom: 2rem; border: 3px solid rgba(255, 255, 255, 0.3);">
+        <!-- Challenge Banner with THEMED colors! -->
+        <div onclick="GagEffects.sparkleBurst()" style="cursor: pointer; background: ${theme.gradient}; padding: 3rem 2rem; border-radius: 16px; text-align: center; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); margin-bottom: 2rem; border: 3px solid rgba(255, 255, 255, 0.3); animation: pulse 2s infinite;">
             <div style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); padding: 2rem; border-radius: 12px; border: 2px solid rgba(255, 255, 255, 0.2);">
-                <h3 style="font-size: 2.5rem; color: white; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); margin-bottom: 1rem; letter-spacing: 2px;">
-                    ✨ ${currentEp.challengeName} ✨
+                <h3 style="font-size: 3rem; color: white; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); margin-bottom: 1rem; letter-spacing: 3px; animation: rainbow 3s infinite;">
+                    ${theme.emoji} ${currentEp.challengeName} ${theme.emoji}
                 </h3>
                 <p style="font-size: 1.3rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); opacity: 0.95;">
-                    This week's ${currentEp.challengeType} challenge will test the queens' skills!
+                    Click me for sparkles! ✨
                 </p>
             </div>
         </div>
@@ -858,8 +1025,8 @@ function renderChallengeAnnounce() {
             <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 1.5rem;">👑 Competing Queens 👑</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
                 ${AppState.cast.map(q => `
-                    <div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, rgba(255, 105, 180, 0.1) 0%, rgba(255, 20, 147, 0.1) 100%); border-radius: 12px; border: 3px solid rgba(255, 105, 180, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px) scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(255, 105, 180, 0.4)'" onmouseout="this.style.transform=''; this.style.boxShadow=''">
-                        <img src="${q.image}" alt="${q.name}" style="width: 96px; height: 96px; object-fit: contain; image-rendering: pixelated; margin: 0 auto; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));">
+                    <div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, rgba(255, 105, 180, 0.1) 0%, rgba(255, 20, 147, 0.1) 100%); border-radius: 12px; border: 3px solid rgba(255, 105, 180, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px) scale(1.05) rotate(2deg)'; this.style.boxShadow='0 8px 16px rgba(255, 105, 180, 0.6)'; this.style.borderColor='#FF1493'" onmouseout="this.style.transform=''; this.style.boxShadow=''; this.style.borderColor='rgba(255, 105, 180, 0.3)'">
+                        <img src="${q.image}" alt="${q.name}" style="width: 96px; height: 96px; object-fit: contain; margin: 0 auto; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));">
                         <div style="font-weight: 700; font-size: 0.95rem; margin-top: 0.75rem; color: #FF1493;">${q.name}</div>
                         <div style="font-size: 0.75rem; opacity: 0.7; margin-top: 0.25rem;">${currentEp.challengeType}: ${q.stats[currentEp.challengeType]}/10</div>
                     </div>
@@ -867,12 +1034,12 @@ function renderChallengeAnnounce() {
             </div>
 
             ${AppState.seasonDrama.length > 0 ? `
-                <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 200, 0, 0.15) 100%); padding: 2rem; border-radius: 12px; margin-top: 2rem; border-left: 5px solid gold; box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);">
+                <div onclick="GagEffects.heartExplosion()" style="cursor: pointer; background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 200, 0, 0.15) 100%); padding: 2rem; border-radius: 12px; margin-top: 2rem; border-left: 5px solid gold; box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
                     <h3 style="font-size: 1.5rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="font-size: 2rem;">☕</span> Workroom Tea
+                        <span style="font-size: 2rem; animation: bounce 1s infinite;">☕</span> Workroom Tea (Click for hearts!)
                     </h3>
                     ${AppState.seasonDrama.slice(-3).map(drama => `
-                        <div style="padding: 1rem; margin: 0.75rem 0; background: rgba(255, 255, 255, 0.6); border-radius: 8px; border-left: 3px solid gold; font-style: italic;">
+                        <div style="padding: 1rem; margin: 0.75rem 0; background: rgba(255, 255, 255, 0.6); border-radius: 8px; border-left: 3px solid gold; font-style: italic; animation: slideIn 0.5s;">
                             <span style="font-size: 1.2rem; margin-right: 0.5rem;">🗣️</span>${drama}
                         </div>
                     `).join('')}
@@ -881,10 +1048,21 @@ function renderChallengeAnnounce() {
         </div>
 
         <div class="nav-buttons">
-            <button class="button" onclick="nextPhase()" style="font-size: 1.2rem; padding: 1rem 2rem; background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%); box-shadow: 0 4px 12px rgba(255, 20, 147, 0.4); transform: scale(1.05);">
+            <button class="button" onclick="nextPhase(); GagEffects.sparkleBurst()" style="font-size: 1.2rem; padding: 1rem 2rem; background: ${theme.gradient}; box-shadow: 0 4px 12px rgba(255, 20, 147, 0.4); transform: scale(1.05); animation: shake 2s infinite;">
                 🎭 SEE PERFORMANCES 🎭
             </button>
         </div>
+
+        <style>
+            @keyframes rainbow {
+                0% { filter: hue-rotate(0deg); }
+                100% { filter: hue-rotate(360deg); }
+            }
+            @keyframes bounce {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-10px); }
+            }
+        </style>
     `;
 }
 
@@ -931,29 +1109,46 @@ function renderPerformances() {
 function renderResults() {
     const currentEp = AppState.episodeData[AppState.episodeData.length - 1];
 
-    const winQueen = AppState.cast.find(q => currentEp.placements[q.id] === 'WIN');
+    const winQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'WIN');
     const highQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'HIGH');
     const safeQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'SAFE');
     const lowQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'LOW');
     const btmQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'BTM2');
+
+    // CONFETTI for the WINNER(S)! 🎉
+    if (winQueens.length > 0) {
+        setTimeout(() => GagEffects.winnerConfetti(), 500);
+        // EXTRA confetti for DOUBLE WIN!
+        if (winQueens.length > 1) {
+            setTimeout(() => GagEffects.winnerConfetti(), 1500);
+            setTimeout(() => GagEffects.sparkleBurst(), 2500);
+        }
+    }
+    // Stars for HIGH placements! ⭐
+    if (highQueens.length > 0) {
+        setTimeout(() => GagEffects.starShower(), 1000);
+    }
 
     return `
         <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">👑 Episode ${AppState.currentEpisode} Results 👑</h2>
 
         <div class="phase-container">
             <div style="display: flex; flex-direction: column; gap: 2rem;">
-                ${winQueen ? `
-                    <div style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 200, 0, 0.2) 100%); padding: 2.5rem; border-radius: 16px; border: 4px solid gold; box-shadow: 0 8px 24px rgba(255, 215, 0, 0.4); animation: pulse 2s infinite;">
-                        <h3 style="text-align: center; font-size: 2rem; color: goldenrod; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-                            🏆 CHALLENGE WINNER 🏆
+                ${winQueens.length > 0 ? `
+                    <div onclick="GagEffects.winnerConfetti()" style="cursor: pointer; background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 200, 0, 0.2) 100%); padding: 2.5rem; border-radius: 16px; border: 4px solid gold; box-shadow: 0 8px 24px rgba(255, 215, 0, 0.4); animation: pulse 2s infinite;">
+                        <h3 style="text-align: center; font-size: 2rem; color: goldenrod; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); animation: rainbow 3s infinite;">
+                            🏆 ${winQueens.length > 1 ? 'DOUBLE WIN! CONDRAGULATIONS!' : 'CHALLENGE WINNER'} 🏆
                         </h3>
                         <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
-                            <div style="text-align: center; padding: 2rem; background: white; border-radius: 16px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); border: 3px solid gold;">
-                                <img src="${winQueen.image}" alt="${winQueen.name}" style="width: 150px; height: 150px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 6px 12px rgba(255, 215, 0, 0.5)); margin-bottom: 1rem;">
-                                <div style="font-size: 1.8rem; font-weight: 700; color: goldenrod;">${winQueen.name}</div>
-                                <div style="font-size: 1.2rem; margin-top: 0.5rem;">🏆 Condragulations! 🏆</div>
-                            </div>
+                            ${winQueens.map(q => `
+                                <div style="text-align: center; padding: 2rem; background: white; border-radius: 16px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); border: 4px solid gold; animation: shake 1s infinite;">
+                                    <img src="${q.image}" alt="${q.name}" style="width: 150px; height: 150px; object-fit: contain; filter: drop-shadow(0 8px 16px rgba(255, 215, 0, 0.7)); margin-bottom: 1rem;">
+                                    <div style="font-size: 1.8rem; font-weight: 700; color: goldenrod;">${q.name}</div>
+                                    <div style="font-size: 1.2rem; margin-top: 0.5rem;">🏆 Condragulations! 🏆</div>
+                                </div>
+                            `).join('')}
                         </div>
+                        <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">(Click for more confetti!)</p>
                     </div>
                 ` : ''}
 
@@ -1092,12 +1287,17 @@ function renderLipsync() {
 
             <div style="text-align: center; padding: 2rem; background: rgba(139, 0, 0, 0.1); border-radius: 12px; border: 2px solid darkred;">
                 <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: darkred;">👑 Who Should Stay? 👑</h3>
-                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
                     <button class="button" onclick="eliminateQueen(${btmQueens[1].id})" style="font-size: 1.2rem; padding: 1.25rem 2.5rem; background: linear-gradient(135deg, #32CD32 0%, #228B22 100%); box-shadow: 0 4px 16px rgba(50, 205, 50, 0.4); border: 3px solid white;">
                         ✅ ${btmQueens[0].name.toUpperCase()} SHANTAY YOU STAY
                     </button>
                     <button class="button" onclick="eliminateQueen(${btmQueens[0].id})" style="font-size: 1.2rem; padding: 1.25rem 2.5rem; background: linear-gradient(135deg, #32CD32 0%, #228B22 100%); box-shadow: 0 4px 16px rgba(50, 205, 50, 0.4); border: 3px solid white;">
                         ✅ ${btmQueens[1].name.toUpperCase()} SHANTAY YOU STAY
+                    </button>
+                </div>
+                <div style="text-align: center;">
+                    <button class="button" onclick="doubleShantay()" style="font-size: 1.3rem; padding: 1.5rem 3rem; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6); border: 4px solid white; animation: pulse 2s infinite;">
+                        ✨✨ DOUBLE SHANTAY YOU BOTH STAY ✨✨
                     </button>
                 </div>
             </div>
@@ -1153,6 +1353,62 @@ function renderElimination() {
                 '<button class="button" onclick="nextPhase()" style="font-size: 1.2rem; padding: 1rem 2rem;">NEXT EPISODE</button>'
             }
         </div>
+    `;
+}
+
+function renderDoubleShantay() {
+    const currentEp = AppState.episodeData[AppState.episodeData.length - 1];
+    const btmQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'BTM2');
+
+    return `
+        <h2 style="text-align: center; font-size: 3rem; margin-bottom: 2rem; animation: rainbow 3s infinite;">✨ DOUBLE SHANTAY! ✨</h2>
+
+        <div onclick="GagEffects.winnerConfetti()" style="cursor: pointer; background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 105, 180, 0.2) 50%, rgba(138, 43, 226, 0.2) 100%); padding: 3rem 2rem; border-radius: 16px; box-shadow: 0 12px 32px rgba(255, 20, 147, 0.5); margin-bottom: 2rem; border: 4px solid gold; animation: pulse 2s infinite;">
+            <div style="text-align: center; padding: 2rem;">
+                <h3 style="font-size: 2.5rem; margin-bottom: 2rem; color: goldenrod; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); animation: shake 1s infinite;">
+                    🎉 YOU BOTH STAY! 🎉
+                </h3>
+                <p style="font-size: 1.5rem; margin-bottom: 2rem; font-style: italic; color: #FF1493;">
+                    "I'm not ready to send either of you home tonight..."
+                </p>
+
+                <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin: 2rem 0;">
+                    ${btmQueens.map(q => `
+                        <div style="text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); border: 4px solid gold; animation: bounce 2s infinite;">
+                            <img src="${q.image}" alt="${q.name}" style="width: 180px; height: 180px; object-fit: contain; filter: drop-shadow(0 8px 20px rgba(255, 215, 0, 0.8)); margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 2rem; font-weight: 700; color: goldenrod; margin-bottom: 0.5rem;">${q.name}</h3>
+                            <p style="font-size: 1.3rem; color: #FF1493; font-weight: 700;">SHANTAY YOU STAY!</p>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 12px; margin: 2rem auto; max-width: 800px; border: 3px solid gold;">
+                    <p style="font-size: 1.3rem; font-style: italic; line-height: 1.8; color: #333;">
+                        "In a SHOCKING twist that has NEVER happened before, BOTH queens get to stay!
+                        This season just got even more INTENSE! Who will survive to see the crown? 👑"
+                    </p>
+                </div>
+
+                <p style="font-size: 1rem; margin-top: 2rem; opacity: 0.8;">(Click anywhere for more confetti!)</p>
+            </div>
+        </div>
+
+        ${renderTrackRecordTable()}
+        ${renderSeasonStats()}
+
+        <div class="nav-buttons">
+            ${AppState.cast.length === 4 ?
+                '<button class="button" onclick="nextPhase()" style="font-size: 1.3rem; padding: 1.25rem 2.5rem; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); box-shadow: 0 4px 16px rgba(255, 215, 0, 0.5);">✨ GRAND FINALE ✨</button>' :
+                '<button class="button" onclick="nextPhase(); GagEffects.sparkleBurst()" style="font-size: 1.2rem; padding: 1rem 2rem; background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);">NEXT EPISODE</button>'
+            }
+        </div>
+
+        <style>
+            @keyframes bounce {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-20px); }
+            }
+        </style>
     `;
 }
 
@@ -1344,14 +1600,20 @@ function renderProducerRoom() {
                     <div style="display: flex; align-items: center; margin-bottom: 1rem;">
                         <span style="font-size: 2rem; margin-right: 1rem;">🏆</span>
                         <div>
-                            <label style="font-weight: 700; font-size: 1.2rem; color: goldenrod;">CHALLENGE WINNER</label>
-                            <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.2rem;">Who should win this episode?</p>
+                            <label style="font-weight: 700; font-size: 1.2rem; color: goldenrod;">CHALLENGE WINNER(S)</label>
+                            <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.2rem;">Select one winner OR create a DOUBLE WIN! 💅</p>
                         </div>
                     </div>
-                    <select class="placement-select" id="override-win" style="width: 100%; padding: 0.75rem; font-size: 1rem; border: 2px solid gold; border-radius: 8px; background: white; font-family: 'Space Mono', monospace;">
-                        <option value="">⚡ Auto (Based on Stats)</option>
-                        ${queensInComp.map(q => `<option value="${q.id}">🏆 ${q.name}</option>`).join('')}
-                    </select>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <select class="placement-select" id="override-win1" style="padding: 0.75rem; font-size: 1rem; border: 2px solid gold; border-radius: 8px; background: white; font-family: 'Space Mono', monospace;">
+                            <option value="">⚡ Auto</option>
+                            ${queensInComp.map(q => `<option value="${q.id}">🏆 ${q.name}</option>`).join('')}
+                        </select>
+                        <select class="placement-select" id="override-win2" style="padding: 0.75rem; font-size: 1rem; border: 2px solid gold; border-radius: 8px; background: white; font-family: 'Space Mono', monospace;">
+                            <option value="">⚡ Auto / Leave Empty</option>
+                            ${queensInComp.map(q => `<option value="${q.id}">🏆 ${q.name}</option>`).join('')}
+                        </select>
+                    </div>
                 </div>
 
                 <!-- HIGH -->
@@ -1511,8 +1773,17 @@ function selectChallenge(challengeType, challengeName) {
     // Get producer overrides if any
     const overrides = {};
 
-    const winOverride = document.getElementById('override-win')?.value;
-    if (winOverride) overrides.WIN = parseInt(winOverride);
+    // Support DOUBLE WINS! 🏆🏆
+    const win1 = document.getElementById('override-win1')?.value;
+    const win2 = document.getElementById('override-win2')?.value;
+    if (win1 || win2) {
+        const winners = [win1, win2].filter(v => v).map(v => parseInt(v));
+        if (winners.length === 1) {
+            overrides.WIN = winners[0];
+        } else if (winners.length === 2) {
+            overrides.WIN = winners; // DOUBLE WIN!
+        }
+    }
 
     const high1 = document.getElementById('override-high1')?.value;
     const high2 = document.getElementById('override-high2')?.value;
@@ -1582,6 +1853,26 @@ function eliminateQueen(queenId) {
     AppState.seasonDrama.push(`${eliminated.name} was eliminated in a shocking lip sync!`);
 
     AppState.currentPhase = 'ELIMINATION';
+    render();
+}
+
+// DOUBLE SHANTAY! Save both queens! 💅✨
+function doubleShantay() {
+    const currentEp = AppState.episodeData[AppState.episodeData.length - 1];
+
+    // NO ONE GOES HOME!
+    currentEp.eliminated = null;
+
+    // MASSIVE CONFETTI for the GAGWORTHY double shantay!
+    GagEffects.winnerConfetti();
+    setTimeout(() => GagEffects.heartExplosion(), 500);
+    setTimeout(() => GagEffects.sparkleBurst(), 1000);
+    setTimeout(() => GagEffects.starShower(), 1500);
+
+    // Generate ICONIC drama
+    AppState.seasonDrama.push(`🎉 SHOCKING TWIST! DOUBLE SHANTAY! Both queens get to stay! 🎉`);
+
+    AppState.currentPhase = 'DOUBLE_SHANTAY';
     render();
 }
 
