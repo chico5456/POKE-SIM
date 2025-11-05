@@ -1029,20 +1029,6 @@ function renderResults() {
     const lowQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'LOW');
     const btmQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'BTM2');
 
-    // CONFETTI for the WINNER(S)! 🎉
-    if (winQueens.length > 0) {
-        setTimeout(() => , 500);
-        // EXTRA confetti for DOUBLE WIN!
-        if (winQueens.length > 1) {
-            setTimeout(() => , 1500);
-            setTimeout(() => , 2500);
-        }
-    }
-    // Stars for HIGH placements! ⭐
-    if (highQueens.length > 0) {
-        setTimeout(() => , 1000);
-    }
-
     return `
         <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">👑 Episode ${AppState.currentEpisode} Results 👑</h2>
 
@@ -1776,12 +1762,6 @@ function doubleShantay() {
 
     // NO ONE GOES HOME!
     currentEp.eliminated = null;
-
-    // MASSIVE CONFETTI for the GAGWORTHY double shantay!
-    ;
-    setTimeout(() => , 500);
-    setTimeout(() => , 1000);
-    setTimeout(() => , 1500);
 
     // Generate ICONIC drama
     AppState.seasonDrama.push(`🎉 SHOCKING TWIST! DOUBLE SHANTAY! Both queens get to stay! 🎉`);
