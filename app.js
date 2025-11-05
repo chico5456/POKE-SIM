@@ -124,7 +124,7 @@ const POKEMON_DATABASE = [
         id: 1,
         name: "Gardevoir",
         dexNumber: 282,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -146,7 +146,7 @@ const POKEMON_DATABASE = [
         id: 2,
         name: "Lopunny",
         dexNumber: 428,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/428.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png",
         stats: {
             acting: 7,
             improv: 9,
@@ -168,7 +168,7 @@ const POKEMON_DATABASE = [
         id: 3,
         name: "Milotic",
         dexNumber: 350,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -190,7 +190,7 @@ const POKEMON_DATABASE = [
         id: 4,
         name: "Tsareena",
         dexNumber: 763,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -212,7 +212,7 @@ const POKEMON_DATABASE = [
         id: 5,
         name: "Primarina",
         dexNumber: 730,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
         stats: {
             acting: 9,
             improv: 7,
@@ -234,7 +234,7 @@ const POKEMON_DATABASE = [
         id: 6,
         name: "Vespiquen",
         dexNumber: 416,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/416.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
         stats: {
             acting: 8,
             improv: 9,
@@ -256,7 +256,7 @@ const POKEMON_DATABASE = [
         id: 7,
         name: "Florges",
         dexNumber: 671,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/671.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png",
         stats: {
             acting: 7,
             improv: 7,
@@ -278,7 +278,7 @@ const POKEMON_DATABASE = [
         id: 8,
         name: "Delphox",
         dexNumber: 655,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/655.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -300,7 +300,7 @@ const POKEMON_DATABASE = [
         id: 9,
         name: "Salazzle",
         dexNumber: 758,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/758.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png",
         stats: {
             acting: 8,
             improv: 10,
@@ -322,7 +322,7 @@ const POKEMON_DATABASE = [
         id: 10,
         name: "Kangaskhan",
         dexNumber: 115,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -344,7 +344,7 @@ const POKEMON_DATABASE = [
         id: 11,
         name: "Nidoqueen",
         dexNumber: 31,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -366,7 +366,7 @@ const POKEMON_DATABASE = [
         id: 12,
         name: "Lilligant",
         dexNumber: 549,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/549.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
         stats: {
             acting: 7,
             improv: 6,
@@ -388,7 +388,7 @@ const POKEMON_DATABASE = [
         id: 13,
         name: "Gothitelle",
         dexNumber: 576,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/576.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
         stats: {
             acting: 9,
             improv: 7,
@@ -410,7 +410,7 @@ const POKEMON_DATABASE = [
         id: 14,
         name: "Froslass",
         dexNumber: 478,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -432,7 +432,7 @@ const POKEMON_DATABASE = [
         id: 15,
         name: "Cinccino",
         dexNumber: 573,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/573.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
         stats: {
             acting: 7,
             improv: 9,
@@ -454,7 +454,7 @@ const POKEMON_DATABASE = [
         id: 16,
         name: "Mismagius",
         dexNumber: 429,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/429.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -476,7 +476,7 @@ const POKEMON_DATABASE = [
         id: 17,
         name: "Cresselia",
         dexNumber: 488,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/488.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -498,7 +498,7 @@ const POKEMON_DATABASE = [
         id: 18,
         name: "Bellossom",
         dexNumber: 182,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/182.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -520,7 +520,7 @@ const POKEMON_DATABASE = [
         id: 19,
         name: "Ninetales (Alola)",
         dexNumber: 38,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -542,7 +542,7 @@ const POKEMON_DATABASE = [
         id: 20,
         name: "Meloetta",
         dexNumber: 648,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/648.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -565,7 +565,7 @@ const POKEMON_DATABASE = [
         id: 21,
         name: "Hatterene",
         dexNumber: 858,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png",
         stats: {
             acting: 9,
             improv: 7,
@@ -587,7 +587,7 @@ const POKEMON_DATABASE = [
         id: 22,
         name: "Roserade",
         dexNumber: 407,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/407.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png",
         stats: {
             acting: 8,
             improv: 9,
@@ -609,7 +609,7 @@ const POKEMON_DATABASE = [
         id: 23,
         name: "Sylveon",
         dexNumber: 700,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -631,7 +631,7 @@ const POKEMON_DATABASE = [
         id: 24,
         name: "Lurantis",
         dexNumber: 754,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/754.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -653,7 +653,7 @@ const POKEMON_DATABASE = [
         id: 25,
         name: "Jynx",
         dexNumber: 124,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
         stats: {
             acting: 10,
             improv: 10,
@@ -675,7 +675,7 @@ const POKEMON_DATABASE = [
         id: 26,
         name: "Alcremie",
         dexNumber: 869,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/869.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -697,7 +697,7 @@ const POKEMON_DATABASE = [
         id: 27,
         name: "Goodra",
         dexNumber: 706,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/706.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -719,7 +719,7 @@ const POKEMON_DATABASE = [
         id: 28,
         name: "Braixen",
         dexNumber: 654,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/654.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -741,7 +741,7 @@ const POKEMON_DATABASE = [
         id: 29,
         name: "Mawile",
         dexNumber: 303,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png",
         stats: {
             acting: 9,
             improv: 9,
@@ -763,7 +763,7 @@ const POKEMON_DATABASE = [
         id: 30,
         name: "Rapidash (Galar)",
         dexNumber: 78,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -785,7 +785,7 @@ const POKEMON_DATABASE = [
         id: 31,
         name: "Ribombee",
         dexNumber: 743,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/743.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/743.png",
         stats: {
             acting: 7,
             improv: 9,
@@ -807,7 +807,7 @@ const POKEMON_DATABASE = [
         id: 32,
         name: "Diancie",
         dexNumber: 719,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/719.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -829,7 +829,7 @@ const POKEMON_DATABASE = [
         id: 33,
         name: "Wigglytuff",
         dexNumber: 40,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
         stats: {
             acting: 7,
             improv: 9,
@@ -851,7 +851,7 @@ const POKEMON_DATABASE = [
         id: 34,
         name: "Aromatisse",
         dexNumber: 683,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/683.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/683.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -873,7 +873,7 @@ const POKEMON_DATABASE = [
         id: 35,
         name: "Pheromosa",
         dexNumber: 795,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/795.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/795.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -895,7 +895,7 @@ const POKEMON_DATABASE = [
         id: 36,
         name: "Bounsweet",
         dexNumber: 761,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/761.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/761.png",
         stats: {
             acting: 6,
             improv: 7,
@@ -917,7 +917,7 @@ const POKEMON_DATABASE = [
         id: 37,
         name: "Espeon",
         dexNumber: 196,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -939,7 +939,7 @@ const POKEMON_DATABASE = [
         id: 38,
         name: "Medicham",
         dexNumber: 308,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -961,7 +961,7 @@ const POKEMON_DATABASE = [
         id: 39,
         name: "Butterfree",
         dexNumber: 12,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
         stats: {
             acting: 7,
             improv: 7,
@@ -983,7 +983,7 @@ const POKEMON_DATABASE = [
         id: 40,
         name: "Oricorio (Pom-Pom)",
         dexNumber: 741,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/741.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png",
         stats: {
             acting: 7,
             improv: 8,
@@ -1005,7 +1005,7 @@ const POKEMON_DATABASE = [
         id: 41,
         name: "Liepard",
         dexNumber: 510,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/510.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/510.png",
         stats: {
             acting: 9,
             improv: 9,
@@ -1027,7 +1027,7 @@ const POKEMON_DATABASE = [
         id: 42,
         name: "Mega Audino",
         dexNumber: 531,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/531.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/531.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -1049,7 +1049,7 @@ const POKEMON_DATABASE = [
         id: 43,
         name: "Beautifly",
         dexNumber: 267,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/267.png",
         stats: {
             acting: 7,
             improv: 7,
@@ -1071,7 +1071,7 @@ const POKEMON_DATABASE = [
         id: 44,
         name: "Glaceon",
         dexNumber: 471,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png",
         stats: {
             acting: 7,
             improv: 7,
@@ -1093,7 +1093,7 @@ const POKEMON_DATABASE = [
         id: 45,
         name: "Shiinotic",
         dexNumber: 756,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/756.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -1115,7 +1115,7 @@ const POKEMON_DATABASE = [
         id: 46,
         name: "Meowstic (Female)",
         dexNumber: 678,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/678.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
         stats: {
             acting: 8,
             improv: 8,
@@ -1137,7 +1137,7 @@ const POKEMON_DATABASE = [
         id: 47,
         name: "Gourgeist",
         dexNumber: 711,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/711.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png",
         stats: {
             acting: 9,
             improv: 9,
@@ -1159,7 +1159,7 @@ const POKEMON_DATABASE = [
         id: 48,
         name: "Florinia",
         dexNumber: 549,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/549.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -1181,7 +1181,7 @@ const POKEMON_DATABASE = [
         id: 49,
         name: "Kricketune",
         dexNumber: 402,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/402.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png",
         stats: {
             acting: 8,
             improv: 7,
@@ -1203,7 +1203,7 @@ const POKEMON_DATABASE = [
         id: 50,
         name: "Chandelure",
         dexNumber: 609,
-        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png",
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png",
         stats: {
             acting: 9,
             improv: 8,
@@ -1484,11 +1484,12 @@ function assignPlacements(queensInCompetition, challengeType, overrides = {}) {
         highQueens.forEach(id => placements[id] = 'HIGH');
         assigned += highQueens.length;
     } else {
-        for (let i = 0; i < numHigh && assigned < numQueens - numBtm; i++) {
-            if (!placements[performances[assigned].queen.id]) {
-                placements[performances[assigned].queen.id] = 'HIGH';
+        let highAssigned = 0;
+        for (let i = 0; i < performances.length && highAssigned < numHigh; i++) {
+            if (!placements[performances[i].queen.id]) {
+                placements[performances[i].queen.id] = 'HIGH';
+                highAssigned++;
             }
-            assigned++;
         }
     }
 
@@ -1497,8 +1498,14 @@ function assignPlacements(queensInCompetition, challengeType, overrides = {}) {
     if (btmQueens.length > 0) {
         btmQueens.forEach(id => placements[id] = 'BTM2');
     } else {
-        placements[performances[numQueens - 2].queen.id] = 'BTM2';
-        placements[performances[numQueens - 1].queen.id] = 'BTM2';
+        // Find the 2 worst performers who don't already have a placement
+        const unplacedPerformances = performances.filter(p => !placements[p.queen.id]);
+        if (unplacedPerformances.length >= 2) {
+            placements[unplacedPerformances[unplacedPerformances.length - 2].queen.id] = 'BTM2';
+            placements[unplacedPerformances[unplacedPerformances.length - 1].queen.id] = 'BTM2';
+        } else if (unplacedPerformances.length === 1) {
+            placements[unplacedPerformances[0].queen.id] = 'BTM2';
+        }
     }
 
     // LOW
@@ -1887,6 +1894,8 @@ function renderResults() {
 
         ${renderTrackRecordTable()}
 
+        ${renderPromoChart()}
+
         <div class="nav-buttons">
             <button class="button" onclick="nextPhase()" style="font-size: 1.2rem; padding: 1rem 2rem; background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%); box-shadow: 0 4px 12px rgba(139, 0, 0, 0.4);">
                 💋 LIP SYNC FOR YOUR LIFE 💋
@@ -2208,6 +2217,35 @@ function renderTrackRecordTable() {
                     }).join('')}
                 </tbody>
             </table>
+        </div>
+    `;
+}
+
+function renderPromoChart() {
+    if (AppState.cast.length === 0) {
+        return '';
+    }
+
+    // Get all cast members (both remaining and eliminated)
+    const allCast = [...AppState.cast, ...AppState.eliminated];
+
+    return `
+        <div style="margin: 40px 0;">
+            <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 25px; color: var(--purple-secondary);">
+                👑 Current Cast Status 👑
+            </h3>
+            <div class="promo-grid">
+                ${allCast.map(queen => {
+                    const isEliminated = AppState.eliminated.includes(queen);
+                    return `
+                        <div class="promo-card ${isEliminated ? 'eliminated' : ''}" style="${isEliminated ? 'filter: grayscale(100%); opacity: 0.5;' : ''}">
+                            <img src="${queen.image}" alt="${queen.name}" style="image-rendering: pixelated;">
+                            <div class="pokemon-name" style="margin-top: 10px; ${isEliminated ? 'text-decoration: line-through;' : ''}">${queen.name}</div>
+                            ${isEliminated ? `<div style="color: #e74c3c; font-size: 12px; font-weight: 600; margin-top: 5px;">ELIMINATED</div>` : `<div style="color: #27ae60; font-size: 12px; font-weight: 600; margin-top: 5px;">IN THE RACE</div>`}
+                        </div>
+                    `;
+                }).join('')}
+            </div>
         </div>
     `;
 }

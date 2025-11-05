@@ -214,36 +214,52 @@
 
         .track-record-table {
             width: 100%;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
-            margin: 30px 0;
+            margin: 30px auto;
+            border-collapse: collapse;
+            color: #3A3A3A;
+            background-color: #E9DFE9;
+            border: 1px solid #C6BFC6;
         }
 
         .track-record-table table {
             width: 100%;
             border-collapse: collapse;
+            margin-bottom: 1em;
+            color: #3A3A3A;
+            background-color: #E9DFE9;
+            border: 1px solid #C6BFC6;
         }
 
         .track-record-table th {
-            background: linear-gradient(135deg, var(--pink-primary), var(--pink-secondary));
-            color: white;
-            padding: 15px;
+            font-weight: bold;
+            padding: 5px;
+            background-color: #E9DFE9;
+            border: 1px solid #C6BFC6;
+            font-size: 13px;
+            text-align: center;
+            width: 75px;
+        }
+
+        .track-record-table th:first-child {
+            width: 150px;
             text-align: left;
-            font-size: 14px;
-            font-weight: 700;
         }
 
         .track-record-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #f0f0f0;
+            padding: 0.5em;
+            border: 1px solid #C6BFC6;
+            background-color: #F5EBF5;
             font-size: 13px;
-            color: #333;
+            text-align: center;
         }
 
-        .track-record-table tr:hover {
-            background: rgba(255, 105, 180, 0.05);
+        .track-record-table td:first-child {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .track-record-table tr:hover td {
+            background-color: #EDE3ED;
         }
 
         .placement-badge {
