@@ -63,6 +63,55 @@ const CHALLENGE_THEMES = {
         gradient: 'linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%)',
         emoji: '💋',
         confettiColors: ['#B71C1C', '#D32F2F', '#E57373']
+    },
+    // NEW CHALLENGE TYPES! MORE VARIETY!
+    'roast': {
+        name: '🔥 Roast',
+        gradient: 'linear-gradient(135deg, #FF5722 0%, #FF9800 100%)',
+        emoji: '🔥',
+        confettiColors: ['#FF5722', '#FF9800', '#FFB74D']
+    },
+    'ball': {
+        name: '✨ Ball Challenge',
+        gradient: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
+        emoji: '✨',
+        confettiColors: ['#FFD700', '#FFA500', '#FFD54F']
+    },
+    'branding': {
+        name: '📱 Branding Challenge',
+        gradient: 'linear-gradient(135deg, #3F51B5 0%, #2196F3 100%)',
+        emoji: '📱',
+        confettiColors: ['#3F51B5', '#2196F3', '#64B5F6']
+    },
+    'singing': {
+        name: '🎙️ Singing Challenge',
+        gradient: 'linear-gradient(135deg, #E91E63 0%, #9C27B0 100%)',
+        emoji: '🎙️',
+        confettiColors: ['#E91E63', '#9C27B0', '#BA68C8']
+    },
+    'hosting': {
+        name: '🎬 Talk Show Challenge',
+        gradient: 'linear-gradient(135deg, #00897B 0%, #00BCD4 100%)',
+        emoji: '🎬',
+        confettiColors: ['#00897B', '#00BCD4', '#4DD0E1']
+    },
+    'commercial': {
+        name: '📺 Commercial Challenge',
+        gradient: 'linear-gradient(135deg, #5E35B1 0%, #7E57C2 100%)',
+        emoji: '📺',
+        confettiColors: ['#5E35B1', '#7E57C2', '#9575CD']
+    },
+    'talent': {
+        name: '⭐ Talent Show',
+        gradient: 'linear-gradient(135deg, #F50057 0%, #FF4081 100%)',
+        emoji: '⭐',
+        confettiColors: ['#F50057', '#FF4081', '#FF80AB']
+    },
+    'wrestling': {
+        name: '🤼 Wrestling Challenge',
+        gradient: 'linear-gradient(135deg, #D32F2F 0%, #F44336 100%)',
+        emoji: '🤼',
+        confettiColors: ['#D32F2F', '#F44336', '#E57373']
     }
 };
 
@@ -510,6 +559,667 @@ const POKEMON_DATABASE = [
         entranceQuote: "Let me serenade you... with my excellence!",
         storylines: ["Music Legend", "Versatile"],
         relationships: {}
+    },
+    // NEW QUEENS - EXPANDING THE ROSTER!
+    {
+        id: 21,
+        name: "Hatterene",
+        dexNumber: 858,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png",
+        stats: {
+            acting: 9,
+            improv: 7,
+            comedy: 6,
+            dance: 8,
+            design: 10,
+            runway: 10,
+            lipsync: 8,
+            makeover: 9,
+            rusical: 8,
+            rumix: 7
+        },
+        personality: "High fashion diva, avant-garde designer",
+        entranceQuote: "Silence! The fashion has arrived!",
+        storylines: ["Avant-Garde", "Diva Behavior"],
+        relationships: {}
+    },
+    {
+        id: 22,
+        name: "Roserade",
+        dexNumber: 407,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/407.png",
+        stats: {
+            acting: 8,
+            improv: 9,
+            comedy: 7,
+            dance: 8,
+            design: 8,
+            runway: 9,
+            lipsync: 8,
+            makeover: 8,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Elegant and deadly, master manipulator",
+        entranceQuote: "Beauty AND thorns, darling!",
+        storylines: ["Villain Edit", "Strategic Genius"],
+        relationships: {}
+    },
+    {
+        id: 23,
+        name: "Sylveon",
+        dexNumber: 700,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+        stats: {
+            acting: 7,
+            improv: 8,
+            comedy: 8,
+            dance: 9,
+            design: 8,
+            runway: 9,
+            lipsync: 9,
+            makeover: 9,
+            rusical: 9,
+            rumix: 9
+        },
+        personality: "Sweet and charming, secretly competitive",
+        entranceQuote: "Ribbons, bows, and ready to slay the competition!",
+        storylines: ["Sweetheart", "Secretly Cutthroat"],
+        relationships: {}
+    },
+    {
+        id: 24,
+        name: "Lurantis",
+        dexNumber: 754,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/754.png",
+        stats: {
+            acting: 8,
+            improv: 7,
+            comedy: 6,
+            dance: 8,
+            design: 9,
+            runway: 10,
+            lipsync: 7,
+            makeover: 9,
+            rusical: 7,
+            rumix: 8
+        },
+        personality: "Fashion forward, runway specialist",
+        entranceQuote: "I'm not a bug, I'm a LOOK!",
+        storylines: ["Look Queen", "Misunderstood"],
+        relationships: {}
+    },
+    {
+        id: 25,
+        name: "Jynx",
+        dexNumber: 124,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png",
+        stats: {
+            acting: 10,
+            improv: 10,
+            comedy: 9,
+            dance: 9,
+            design: 7,
+            runway: 8,
+            lipsync: 10,
+            makeover: 8,
+            rusical: 10,
+            rumix: 9
+        },
+        personality: "Old school diva, veteran performer",
+        entranceQuote: "Honey, I've been doing this since Gen 1!",
+        storylines: ["Legendary Diva", "Old School"],
+        relationships: {}
+    },
+    {
+        id: 26,
+        name: "Alcremie",
+        dexNumber: 869,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/869.png",
+        stats: {
+            acting: 7,
+            improv: 8,
+            comedy: 9,
+            dance: 8,
+            design: 9,
+            runway: 8,
+            lipsync: 7,
+            makeover: 10,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Sweet and creative, design specialist",
+        entranceQuote: "Life is sweet, and so am I!",
+        storylines: ["Design Star", "Sweetness & Light"],
+        relationships: {}
+    },
+    {
+        id: 27,
+        name: "Goodra",
+        dexNumber: 706,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/706.png",
+        stats: {
+            acting: 8,
+            improv: 7,
+            comedy: 8,
+            dance: 7,
+            design: 7,
+            runway: 7,
+            lipsync: 8,
+            makeover: 8,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Big heart, emotional journey",
+        entranceQuote: "I'm soft on the outside, fierce on the inside!",
+        storylines: ["Emotional Journey", "Underdog"],
+        relationships: {}
+    },
+    {
+        id: 28,
+        name: "Braixen",
+        dexNumber: 654,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/654.png",
+        stats: {
+            acting: 7,
+            improv: 8,
+            comedy: 7,
+            dance: 9,
+            design: 7,
+            runway: 8,
+            lipsync: 9,
+            makeover: 7,
+            rusical: 8,
+            rumix: 9
+        },
+        personality: "Young and hungry, fierce competitor",
+        entranceQuote: "Setting the competition on FIRE!",
+        storylines: ["Young Queen", "Fierce"],
+        relationships: {}
+    },
+    {
+        id: 29,
+        name: "Mawile",
+        dexNumber: 303,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png",
+        stats: {
+            acting: 9,
+            improv: 9,
+            comedy: 8,
+            dance: 7,
+            design: 8,
+            runway: 9,
+            lipsync: 8,
+            makeover: 7,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Two-faced strategist, cunning competitor",
+        entranceQuote: "Two faces, twice the talent!",
+        storylines: ["Two-Faced", "Strategic"],
+        relationships: {}
+    },
+    {
+        id: 30,
+        name: "Rapidash (Galar)",
+        dexNumber: 78,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png",
+        stats: {
+            acting: 8,
+            improv: 7,
+            comedy: 7,
+            dance: 9,
+            design: 8,
+            runway: 10,
+            lipsync: 8,
+            makeover: 8,
+            rusical: 8,
+            rumix: 9
+        },
+        personality: "Majestic and mystical, runway queen",
+        entranceQuote: "Galloping to victory in style!",
+        storylines: ["Majestic", "Runway Star"],
+        relationships: {}
+    },
+    {
+        id: 31,
+        name: "Ribombee",
+        dexNumber: 743,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/743.png",
+        stats: {
+            acting: 7,
+            improv: 9,
+            comedy: 10,
+            dance: 9,
+            design: 7,
+            runway: 7,
+            lipsync: 8,
+            makeover: 7,
+            rusical: 9,
+            rumix: 9
+        },
+        personality: "Tiny but mighty, comedy powerhouse",
+        entranceQuote: "Small package, BIG personality!",
+        storylines: ["Comedy Queen", "Size Doesn't Matter"],
+        relationships: {}
+    },
+    {
+        id: 32,
+        name: "Diancie",
+        dexNumber: 719,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/719.png",
+        stats: {
+            acting: 8,
+            improv: 7,
+            comedy: 6,
+            dance: 8,
+            design: 10,
+            runway: 10,
+            lipsync: 8,
+            makeover: 10,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Glamorous and luxurious, jewelry queen",
+        entranceQuote: "Diamonds are forever, and so is this crown!",
+        storylines: ["Glamazon", "Luxury Queen"],
+        relationships: {}
+    },
+    {
+        id: 33,
+        name: "Wigglytuff",
+        dexNumber: 40,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png",
+        stats: {
+            acting: 7,
+            improv: 9,
+            comedy: 10,
+            dance: 8,
+            design: 7,
+            runway: 7,
+            lipsync: 8,
+            makeover: 8,
+            rusical: 9,
+            rumix: 8
+        },
+        personality: "Bubbly comedian, camp queen",
+        entranceQuote: "I'm not just cute, I'm HILARIOUS!",
+        storylines: ["Camp Icon", "Comedian"],
+        relationships: {}
+    },
+    {
+        id: 34,
+        name: "Aromatisse",
+        dexNumber: 683,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/683.png",
+        stats: {
+            acting: 8,
+            improv: 8,
+            comedy: 7,
+            dance: 7,
+            design: 9,
+            runway: 8,
+            lipsync: 7,
+            makeover: 9,
+            rusical: 8,
+            rumix: 7
+        },
+        personality: "Quirky and unique, polarizing performer",
+        entranceQuote: "Some call it weird, I call it FASHION!",
+        storylines: ["Polarizing", "Unique"],
+        relationships: {}
+    },
+    {
+        id: 35,
+        name: "Pheromosa",
+        dexNumber: 795,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/795.png",
+        stats: {
+            acting: 8,
+            improv: 8,
+            comedy: 7,
+            dance: 10,
+            design: 9,
+            runway: 10,
+            lipsync: 10,
+            makeover: 8,
+            rusical: 9,
+            rumix: 10
+        },
+        personality: "Supermodel energy, untouchable",
+        entranceQuote: "Too beautiful, too fast, too good!",
+        storylines: ["Supermodel", "Untouchable"],
+        relationships: {}
+    },
+    {
+        id: 36,
+        name: "Bounsweet",
+        dexNumber: 761,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/761.png",
+        stats: {
+            acting: 6,
+            improv: 7,
+            comedy: 8,
+            dance: 8,
+            design: 7,
+            runway: 7,
+            lipsync: 7,
+            makeover: 7,
+            rusical: 8,
+            rumix: 7
+        },
+        personality: "Baby queen, learning and growing",
+        entranceQuote: "Sweet, fresh, and ready to serve!",
+        storylines: ["Baby Queen", "Growth Arc"],
+        relationships: {}
+    },
+    {
+        id: 37,
+        name: "Espeon",
+        dexNumber: 196,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+        stats: {
+            acting: 8,
+            improv: 8,
+            comedy: 7,
+            dance: 8,
+            design: 8,
+            runway: 9,
+            lipsync: 8,
+            makeover: 8,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Psychic and strategic, calculated moves",
+        entranceQuote: "I predicted I'd win... and here I am!",
+        storylines: ["Strategic Mind", "Calculated"],
+        relationships: {}
+    },
+    {
+        id: 38,
+        name: "Medicham",
+        dexNumber: 308,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png",
+        stats: {
+            acting: 8,
+            improv: 7,
+            comedy: 7,
+            dance: 10,
+            design: 7,
+            runway: 8,
+            lipsync: 9,
+            makeover: 7,
+            rusical: 9,
+            rumix: 9
+        },
+        personality: "Spiritual dancer, zen competitor",
+        entranceQuote: "Find your center... and SERVE!",
+        storylines: ["Spiritual Journey", "Dance Specialist"],
+        relationships: {}
+    },
+    {
+        id: 39,
+        name: "Butterfree",
+        dexNumber: 12,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+        stats: {
+            acting: 7,
+            improv: 7,
+            comedy: 7,
+            dance: 8,
+            design: 8,
+            runway: 8,
+            lipsync: 7,
+            makeover: 9,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Transformation story, inspirational",
+        entranceQuote: "From caterpillar to BUTTERFLY!",
+        storylines: ["Transformation", "Inspirational"],
+        relationships: {}
+    },
+    {
+        id: 40,
+        name: "Oricorio (Pom-Pom)",
+        dexNumber: 741,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/741.png",
+        stats: {
+            acting: 7,
+            improv: 8,
+            comedy: 9,
+            dance: 10,
+            design: 7,
+            runway: 8,
+            lipsync: 9,
+            makeover: 7,
+            rusical: 10,
+            rumix: 10
+        },
+        personality: "Cheerful dancer, infectious energy",
+        entranceQuote: "Let me dance my way into your hearts!",
+        storylines: ["Cheerleader", "Infectious Energy"],
+        relationships: {}
+    },
+    {
+        id: 41,
+        name: "Liepard",
+        dexNumber: 510,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/510.png",
+        stats: {
+            acting: 9,
+            improv: 9,
+            comedy: 8,
+            dance: 8,
+            design: 8,
+            runway: 9,
+            lipsync: 9,
+            makeover: 7,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Sly and cunning, master of shade",
+        entranceQuote: "Claws out, crown secured!",
+        storylines: ["Shady Queen", "Strategic Player"],
+        relationships: {}
+    },
+    {
+        id: 42,
+        name: "Mega Audino",
+        dexNumber: 531,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/531.png",
+        stats: {
+            acting: 8,
+            improv: 8,
+            comedy: 8,
+            dance: 7,
+            design: 9,
+            runway: 9,
+            lipsync: 8,
+            makeover: 10,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Caring nurse, makeover specialist",
+        entranceQuote: "I'll heal your looks AND the competition!",
+        storylines: ["Makeover Queen", "Healer"],
+        relationships: {}
+    },
+    {
+        id: 43,
+        name: "Beautifly",
+        dexNumber: 267,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png",
+        stats: {
+            acting: 7,
+            improv: 7,
+            comedy: 7,
+            dance: 8,
+            design: 8,
+            runway: 9,
+            lipsync: 7,
+            makeover: 8,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Graceful and delicate, beauty queen",
+        entranceQuote: "Watch me flutter to the top!",
+        storylines: ["Beauty Queen", "Graceful"],
+        relationships: {}
+    },
+    {
+        id: 44,
+        name: "Glaceon",
+        dexNumber: 471,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+        stats: {
+            acting: 7,
+            improv: 7,
+            comedy: 6,
+            dance: 7,
+            design: 9,
+            runway: 10,
+            lipsync: 7,
+            makeover: 9,
+            rusical: 7,
+            rumix: 7
+        },
+        personality: "Ice cold fashion, stoic competitor",
+        entranceQuote: "Cool, calm, and serving LOOKS!",
+        storylines: ["Ice Queen", "Stoic"],
+        relationships: {}
+    },
+    {
+        id: 45,
+        name: "Shiinotic",
+        dexNumber: 756,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/756.png",
+        stats: {
+            acting: 8,
+            improv: 8,
+            comedy: 9,
+            dance: 7,
+            design: 9,
+            runway: 8,
+            lipsync: 7,
+            makeover: 9,
+            rusical: 8,
+            rumix: 7
+        },
+        personality: "Quirky and weird, cult favorite",
+        entranceQuote: "Let me SPORE you with my talent!",
+        storylines: ["Cult Favorite", "Weird & Wonderful"],
+        relationships: {}
+    },
+    {
+        id: 46,
+        name: "Meowstic (Female)",
+        dexNumber: 678,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/678.png",
+        stats: {
+            acting: 8,
+            improv: 8,
+            comedy: 7,
+            dance: 8,
+            design: 8,
+            runway: 9,
+            lipsync: 8,
+            makeover: 8,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Mysterious and elegant, psychic queen",
+        entranceQuote: "I see your thoughts... and I'm judging!",
+        storylines: ["Mysterious", "Elegant"],
+        relationships: {}
+    },
+    {
+        id: 47,
+        name: "Gourgeist",
+        dexNumber: 711,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/711.png",
+        stats: {
+            acting: 9,
+            improv: 9,
+            comedy: 10,
+            dance: 7,
+            design: 8,
+            runway: 8,
+            lipsync: 8,
+            makeover: 8,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Spooky comedy queen, Halloween icon",
+        entranceQuote: "Trick or treat? Either way, you're getting SERVED!",
+        storylines: ["Spooky Camp", "Comedy Gold"],
+        relationships: {}
+    },
+    {
+        id: 48,
+        name: "Florinia",
+        dexNumber: 549,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/549.png",
+        stats: {
+            acting: 8,
+            improv: 7,
+            comedy: 7,
+            dance: 9,
+            design: 9,
+            runway: 9,
+            lipsync: 8,
+            makeover: 9,
+            rusical: 9,
+            rumix: 8
+        },
+        personality: "Flower power, natural beauty",
+        entranceQuote: "Blossoming into greatness!",
+        storylines: ["Natural Beauty", "Growth"],
+        relationships: {}
+    },
+    {
+        id: 49,
+        name: "Kricketune",
+        dexNumber: 402,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/402.png",
+        stats: {
+            acting: 8,
+            improv: 7,
+            comedy: 7,
+            dance: 8,
+            design: 7,
+            runway: 7,
+            lipsync: 8,
+            makeover: 7,
+            rusical: 10,
+            rumix: 10
+        },
+        personality: "Musical maestro, rusical specialist",
+        entranceQuote: "Let me compose your DEMISE!",
+        storylines: ["Musical Theater", "Underestimated"],
+        relationships: {}
+    },
+    {
+        id: 50,
+        name: "Chandelure",
+        dexNumber: 609,
+        image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png",
+        stats: {
+            acting: 9,
+            improv: 8,
+            comedy: 7,
+            dance: 7,
+            design: 9,
+            runway: 10,
+            lipsync: 8,
+            makeover: 8,
+            rusical: 8,
+            rumix: 8
+        },
+        personality: "Gothic elegance, dramatic performer",
+        entranceQuote: "I'm here to LIGHT UP this competition!",
+        storylines: ["Gothic Queen", "Dramatic"],
+        relationships: {}
     }
 ];
 
@@ -526,7 +1236,19 @@ const CHALLENGES = [
     { name: "Runway Extravaganza", type: "runway", description: "Serve looks!" },
     { name: "Makeover Challenge", type: "makeover", description: "Transform someone else!" },
     { name: "Rusical", type: "rusical", description: "Sing and dance in a musical!" },
-    { name: "Girl Groups", type: "rumix", description: "Perform in a girl group!" }
+    { name: "Girl Groups", type: "rumix", description: "Perform in a girl group!" },
+    // NEW CHALLENGES - MORE VARIETY!
+    { name: "Roast", type: "roast", description: "Roast your fellow queens!" },
+    { name: "Ball Challenge - 3 Looks!", type: "ball", description: "Serve THREE legendary looks!" },
+    { name: "Branding Challenge", type: "branding", description: "Create your brand!" },
+    { name: "Singing Challenge", type: "singing", description: "Belt it out for the win!" },
+    { name: "Talk Show Challenge", type: "hosting", description: "Host your own talk show!" },
+    { name: "Commercial Challenge", type: "commercial", description: "Sell us something fabulous!" },
+    { name: "Talent Show", type: "talent", description: "Show us your special talent!" },
+    { name: "Wrestling Challenge", type: "wrestling", description: "Body slam the competition!" },
+    { name: "Music Video Challenge", type: "rumix", description: "Film an epic music video!" },
+    { name: "Improv Challenge", type: "improv", description: "Think on your feet!" },
+    { name: "Horror Movie Challenge", type: "acting", description: "Scream queen realness!" }
 ];
 
 // ========================================
@@ -543,12 +1265,43 @@ const DRAMA_TEMPLATES = [
     "{queen2} throws shade at {queen1}'s look",
     "{queen1} questions if they belong in the competition",
     "A heated argument erupts between {queen1} and {queen2}",
-    "{queen1} emerges as an unexpected frontrunner"
+    "{queen1} emerges as an unexpected frontrunner",
+    // MORE DRAMA! MORE TWISTS!
+    "{queen1} reveals they've been dealing with {emotion} all season",
+    "{queen2} accuses {queen1} of copying their {topic}",
+    "UNTUCKED EXPLOSION: {queen1} vs {queen2} goes OFF!",
+    "{queen1} makes a shocking confession about {emotion}",
+    "{queen2} questions {queen1}'s authenticity on {topic}",
+    "The judges clock {queen1} for being {trait}",
+    "{queen1} has a breakthrough moment and sheds tears",
+    "{queen2} and {queen1} squash their beef and hug it out",
+    "SHADY MOMENT: {queen2} throws subtle shade at {queen1}",
+    "{queen1} stands up for {queen2} in an emotional moment",
+    "RU STEPS IN: The queens are reminded to focus on {topic}",
+    "{queen1} proves the haters wrong with an amazing {topic} performance",
+    "Love triangle drama: {queen1} caught between {queen2} and another queen",
+    "{queen2} reads {queen1} to filth in Untucked!",
+    "GAGGER: {queen1} reveals their true feelings about {queen2}",
+    "{queen1} struggles with {emotion} but pushes through",
+    "The workroom gasps as {queen2} calls out {queen1}!",
+    "{queen1} and {queen2} become an unstoppable power duo",
+    "VILLAIN ARC: {queen1} is getting a villain edit for being {trait}",
+    "{queen2} apologizes to {queen1} for being {trait}",
+    "EMOTIONAL: {queen1} dedicates their performance to overcoming {emotion}",
+    "The queens rally around {queen1} during a vulnerable moment",
+    "{queen2} throws a drink (just kidding... or?)",
+    "{queen1} gives an inspirational speech about {emotion}",
+    "RIVALRY: {queen1} and {queen2} are competing for top spot",
+    "The entire cast sides with {queen1} against {queen2}",
+    "{queen1} has a panic attack about {emotion} but recovers",
+    "REDEMPTION: {queen1} proves they're more than {trait}",
+    "{queen2} encourages {queen1} to be confident",
+    "Surprising friendship: {queen1} and {queen2} become besties"
 ];
 
-const TOPICS = ["the challenge", "runway looks", "strategy", "favoritism", "talent"];
-const EMOTIONS = ["pressure", "homesickness", "self-doubt", "competition stress"];
-const TRAITS = ["fake", "arrogant", "safe", "trying too hard", "not trying enough"];
+const TOPICS = ["the challenge", "runway looks", "strategy", "favoritism", "talent", "screen time", "judging", "their storyline", "runway presentation", "performance style", "aesthetic", "attitude"];
+const EMOTIONS = ["pressure", "homesickness", "self-doubt", "competition stress", "impostor syndrome", "anxiety", "family issues", "past trauma", "burnout", "overwhelming expectations"];
+const TRAITS = ["fake", "arrogant", "safe", "trying too hard", "not trying enough", "messy", "shady", "too perfect", "rehearsed", "inauthentic", "competitive", "intimidating"];
 
 const LIPSYNC_DESCRIPTIONS = [
     "An electrifying performance with high energy and fierce moves!",
@@ -558,7 +1311,24 @@ const LIPSYNC_DESCRIPTIONS = [
     "One queen clearly dominates with flawless execution!",
     "Hair flips, reveals, and stunning choreography!",
     "An emotional journey told through dance and expression!",
-    "Camp, comedy, and character - this lipsync has it all!"
+    "Camp, comedy, and character - this lipsync has it all!",
+    // MORE LIPSYNC VARIETY!
+    "A LEGENDARY lip sync for the ages! Both queens are giving EVERYTHING!",
+    "Wig reveals, costume reveals - REVEALS ON REVEALS!",
+    "One queen is serving face while the other serves PERFORMANCE!",
+    "The splits! The dips! The DRAMA! This is ICONIC!",
+    "A slow burn that builds to an explosive climax!",
+    "Comedy gold! Both queens are making this song HILARIOUS!",
+    "Pure EMOTION - not a dry eye in the house!",
+    "Acrobatic excellence! These queens are ATHLETIC!",
+    "The stage is on FIRE with this performance!",
+    "One queen is pulling out all the stops with tricks and stunts!",
+    "A masterclass in facial expressions and lip sync precision!",
+    "The energy is UNMATCHED - this is what drag is about!",
+    "Sensual, sexy, and absolutely CAPTIVATING!",
+    "Both queens are telling a STORY through this performance!",
+    "The crowd is going WILD - this is a showstopper!",
+    "One queen has a SECRET WEAPON up their sleeve!"
 ];
 
 // ========================================
