@@ -1,84 +1,8 @@
 // ========================================
-// GAG-WORTHY VISUAL EFFECTS! 💅✨
+// PROFESSIONAL DESIGN SYSTEM
 // ========================================
 
-const GagEffects = {
-    // CONFETTI for winners!
-    winnerConfetti: function() {
-        const duration = 3000;
-        const end = Date.now() + duration;
-
-        (function frame() {
-            confetti({
-                particleCount: 7,
-                angle: 60,
-                spread: 55,
-                origin: { x: 0 },
-                colors: ['#FFD700', '#FFA500', '#FF69B4', '#FF1493']
-            });
-            confetti({
-                particleCount: 7,
-                angle: 120,
-                spread: 55,
-                origin: { x: 1 },
-                colors: ['#FFD700', '#FFA500', '#FF69B4', '#FF1493']
-            });
-
-            if (Date.now() < end) {
-                requestAnimationFrame(frame);
-            }
-        }());
-    },
-
-    // SPARKLE burst!
-    sparkleBurst: function() {
-        confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 },
-            colors: ['#FFD700', '#FFF', '#FF69B4', '#00FFFF', '#FF1493']
-        });
-    },
-
-    // DRAMATIC shake animation
-    shakeElement: function(elementId) {
-        const el = document.getElementById(elementId);
-        if (el) {
-            el.style.animation = 'shake 0.5s';
-            setTimeout(() => el.style.animation = '', 500);
-        }
-    },
-
-    // HEART explosion for emotional moments
-    heartExplosion: function() {
-        const count = 50;
-        const defaults = {
-            origin: { y: 0.7 },
-            shapes: ['circle'],
-            colors: ['#FF1493', '#FF69B4', '#FFB6C1']
-        };
-
-        confetti({
-            ...defaults,
-            particleCount: count,
-            spread: 100,
-            startVelocity: 30,
-        });
-    },
-
-    // STAR shower for high placements
-    starShower: function() {
-        confetti({
-            particleCount: 50,
-            spread: 60,
-            origin: { y: 0 },
-            shapes: ['star'],
-            colors: ['#FFD700', '#FFA500', '#FFFF00']
-        });
-    }
-};
-
-// Challenge-specific visual themes!
+// Challenge-specific visual themes with professional styling
 const CHALLENGE_THEMES = {
     'acting': {
         name: '🎭 Acting Challenge',
@@ -995,23 +919,13 @@ function renderChallengeAnnounce() {
     const currentEp = AppState.episodeData[AppState.episodeData.length - 1];
     const theme = CHALLENGE_THEMES[currentEp.challengeType] || CHALLENGE_THEMES['acting'];
 
-    // TRIGGER CONFETTI on page load! 🎉
-    setTimeout(() => {
-        confetti({
-            particleCount: 50,
-            spread: 70,
-            origin: { y: 0.6 },
-            colors: theme.confettiColors
-        });
-    }, 500);
-
     return `
         <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">🎬 Episode ${AppState.currentEpisode} 🎬</h2>
 
         <!-- Challenge Banner with THEMED colors! -->
-        <div onclick="GagEffects.sparkleBurst()" style="cursor: pointer; background: ${theme.gradient}; padding: 3rem 2rem; border-radius: 16px; text-align: center; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); margin-bottom: 2rem; border: 3px solid rgba(255, 255, 255, 0.3); animation: pulse 2s infinite;">
+        <div onclick="" style="cursor: pointer; background: ${theme.gradient}; padding: 3rem 2rem; border-radius: 16px; text-align: center; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); margin-bottom: 2rem; border: 3px solid rgba(255, 255, 255, 0.3); box-shadow: 0 8px 32px rgba(0,0,0,0.2);">
             <div style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); padding: 2rem; border-radius: 12px; border: 2px solid rgba(255, 255, 255, 0.2);">
-                <h3 style="font-size: 3rem; color: white; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); margin-bottom: 1rem; letter-spacing: 3px; animation: rainbow 3s infinite;">
+                <h3 style="font-size: 3rem; color: white; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); margin-bottom: 1rem; letter-spacing: 3px; text-shadow: 0 0 20px rgba(255,255,255,0.5);">
                     ${theme.emoji} ${currentEp.challengeName} ${theme.emoji}
                 </h3>
                 <p style="font-size: 1.3rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); opacity: 0.95;">
@@ -1034,7 +948,7 @@ function renderChallengeAnnounce() {
             </div>
 
             ${AppState.seasonDrama.length > 0 ? `
-                <div onclick="GagEffects.heartExplosion()" style="cursor: pointer; background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 200, 0, 0.15) 100%); padding: 2rem; border-radius: 12px; margin-top: 2rem; border-left: 5px solid gold; box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
+                <div onclick="" style="cursor: pointer; background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 200, 0, 0.15) 100%); padding: 2rem; border-radius: 12px; margin-top: 2rem; border-left: 5px solid gold; box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
                     <h3 style="font-size: 1.5rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
                         <span style="font-size: 2rem; animation: bounce 1s infinite;">☕</span> Workroom Tea (Click for hearts!)
                     </h3>
@@ -1048,7 +962,7 @@ function renderChallengeAnnounce() {
         </div>
 
         <div class="nav-buttons">
-            <button class="button" onclick="nextPhase(); GagEffects.sparkleBurst()" style="font-size: 1.2rem; padding: 1rem 2rem; background: ${theme.gradient}; box-shadow: 0 4px 12px rgba(255, 20, 147, 0.4); transform: scale(1.05); animation: shake 2s infinite;">
+            <button class="button" onclick="nextPhase(); " style="font-size: 1.2rem; padding: 1rem 2rem; background: ${theme.gradient}; box-shadow: 0 4px 12px rgba(255, 20, 147, 0.4); transform: scale(1.05); transition: transform 0.2s;">
                 🎭 SEE PERFORMANCES 🎭
             </button>
         </div>
@@ -1117,16 +1031,16 @@ function renderResults() {
 
     // CONFETTI for the WINNER(S)! 🎉
     if (winQueens.length > 0) {
-        setTimeout(() => GagEffects.winnerConfetti(), 500);
+        setTimeout(() => , 500);
         // EXTRA confetti for DOUBLE WIN!
         if (winQueens.length > 1) {
-            setTimeout(() => GagEffects.winnerConfetti(), 1500);
-            setTimeout(() => GagEffects.sparkleBurst(), 2500);
+            setTimeout(() => , 1500);
+            setTimeout(() => , 2500);
         }
     }
     // Stars for HIGH placements! ⭐
     if (highQueens.length > 0) {
-        setTimeout(() => GagEffects.starShower(), 1000);
+        setTimeout(() => , 1000);
     }
 
     return `
@@ -1135,13 +1049,13 @@ function renderResults() {
         <div class="phase-container">
             <div style="display: flex; flex-direction: column; gap: 2rem;">
                 ${winQueens.length > 0 ? `
-                    <div onclick="GagEffects.winnerConfetti()" style="cursor: pointer; background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 200, 0, 0.2) 100%); padding: 2.5rem; border-radius: 16px; border: 4px solid gold; box-shadow: 0 8px 24px rgba(255, 215, 0, 0.4); animation: pulse 2s infinite;">
-                        <h3 style="text-align: center; font-size: 2rem; color: goldenrod; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); animation: rainbow 3s infinite;">
+                    <div onclick="" style="cursor: pointer; background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 200, 0, 0.2) 100%); padding: 2.5rem; border-radius: 16px; border: 4px solid gold; box-shadow: 0 8px 24px rgba(255, 215, 0, 0.4); box-shadow: 0 8px 32px rgba(0,0,0,0.2);">
+                        <h3 style="text-align: center; font-size: 2rem; color: goldenrod; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); text-shadow: 0 0 20px rgba(255,255,255,0.5);">
                             🏆 ${winQueens.length > 1 ? 'DOUBLE WIN! CONDRAGULATIONS!' : 'CHALLENGE WINNER'} 🏆
                         </h3>
                         <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;">
                             ${winQueens.map(q => `
-                                <div style="text-align: center; padding: 2rem; background: white; border-radius: 16px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); border: 4px solid gold; animation: shake 1s infinite;">
+                                <div style="text-align: center; padding: 2rem; background: white; border-radius: 16px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); border: 4px solid gold; transition: transform 0.2s;">
                                     <img src="${q.image}" alt="${q.name}" style="width: 150px; height: 150px; object-fit: contain; filter: drop-shadow(0 8px 16px rgba(255, 215, 0, 0.7)); margin-bottom: 1rem;">
                                     <div style="font-size: 1.8rem; font-weight: 700; color: goldenrod;">${q.name}</div>
                                     <div style="font-size: 1.2rem; margin-top: 0.5rem;">🏆 Condragulations! 🏆</div>
@@ -1296,7 +1210,7 @@ function renderLipsync() {
                     </button>
                 </div>
                 <div style="text-align: center;">
-                    <button class="button" onclick="doubleShantay()" style="font-size: 1.3rem; padding: 1.5rem 3rem; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6); border: 4px solid white; animation: pulse 2s infinite;">
+                    <button class="button" onclick="doubleShantay()" style="font-size: 1.3rem; padding: 1.5rem 3rem; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6); border: 4px solid white; box-shadow: 0 8px 32px rgba(0,0,0,0.2);">
                         ✨✨ DOUBLE SHANTAY YOU BOTH STAY ✨✨
                     </button>
                 </div>
@@ -1361,11 +1275,11 @@ function renderDoubleShantay() {
     const btmQueens = AppState.cast.filter(q => currentEp.placements[q.id] === 'BTM2');
 
     return `
-        <h2 style="text-align: center; font-size: 3rem; margin-bottom: 2rem; animation: rainbow 3s infinite;">✨ DOUBLE SHANTAY! ✨</h2>
+        <h2 style="text-align: center; font-size: 3rem; margin-bottom: 2rem; text-shadow: 0 0 20px rgba(255,255,255,0.5);">✨ DOUBLE SHANTAY! ✨</h2>
 
-        <div onclick="GagEffects.winnerConfetti()" style="cursor: pointer; background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 105, 180, 0.2) 50%, rgba(138, 43, 226, 0.2) 100%); padding: 3rem 2rem; border-radius: 16px; box-shadow: 0 12px 32px rgba(255, 20, 147, 0.5); margin-bottom: 2rem; border: 4px solid gold; animation: pulse 2s infinite;">
+        <div onclick="" style="cursor: pointer; background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 105, 180, 0.2) 50%, rgba(138, 43, 226, 0.2) 100%); padding: 3rem 2rem; border-radius: 16px; box-shadow: 0 12px 32px rgba(255, 20, 147, 0.5); margin-bottom: 2rem; border: 4px solid gold; box-shadow: 0 8px 32px rgba(0,0,0,0.2);">
             <div style="text-align: center; padding: 2rem;">
-                <h3 style="font-size: 2.5rem; margin-bottom: 2rem; color: goldenrod; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); animation: shake 1s infinite;">
+                <h3 style="font-size: 2.5rem; margin-bottom: 2rem; color: goldenrod; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); transition: transform 0.2s;">
                     🎉 YOU BOTH STAY! 🎉
                 </h3>
                 <p style="font-size: 1.5rem; margin-bottom: 2rem; font-style: italic; color: #FF1493;">
@@ -1399,7 +1313,7 @@ function renderDoubleShantay() {
         <div class="nav-buttons">
             ${AppState.cast.length === 4 ?
                 '<button class="button" onclick="nextPhase()" style="font-size: 1.3rem; padding: 1.25rem 2.5rem; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); box-shadow: 0 4px 16px rgba(255, 215, 0, 0.5);">✨ GRAND FINALE ✨</button>' :
-                '<button class="button" onclick="nextPhase(); GagEffects.sparkleBurst()" style="font-size: 1.2rem; padding: 1rem 2rem; background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);">NEXT EPISODE</button>'
+                '<button class="button" onclick="nextPhase(); " style="font-size: 1.2rem; padding: 1rem 2rem; background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);">NEXT EPISODE</button>'
             }
         </div>
 
@@ -1864,10 +1778,10 @@ function doubleShantay() {
     currentEp.eliminated = null;
 
     // MASSIVE CONFETTI for the GAGWORTHY double shantay!
-    GagEffects.winnerConfetti();
-    setTimeout(() => GagEffects.heartExplosion(), 500);
-    setTimeout(() => GagEffects.sparkleBurst(), 1000);
-    setTimeout(() => GagEffects.starShower(), 1500);
+    ;
+    setTimeout(() => , 500);
+    setTimeout(() => , 1000);
+    setTimeout(() => , 1500);
 
     // Generate ICONIC drama
     AppState.seasonDrama.push(`🎉 SHOCKING TWIST! DOUBLE SHANTAY! Both queens get to stay! 🎉`);
